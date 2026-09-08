@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T21:51:34.208Z",
-  "last_sequence": 168,
+  "updated_at": "2026-09-08T21:53:54.309Z",
+  "last_sequence": 169,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "Batch A 식별자·네트워크 승인·새 파일/본문 흐름 수정 제출; 미승인, 제품 테스트 NOT_RUN",
+    "summary": "Batch A 합성 타입 흐름 직접 검증 통과 및 실제 로컬 SQLite 잠금 탐색 보존; 제품 검증과 구분",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "현재 Batch A 타입 흐름 직접 검증 후 DDT 재검토"
+      "DDT Batch A 최종 재검토 후 별도 승인"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T21:51:34.229Z",
+      "observed_at": "2026-09-08T21:53:54.328Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2146,7 +2146,13 @@
       "occurred_at": "2026-09-08T21:51:34.208Z",
       "actor": "Astra",
       "summary": "Batch A 식별자·네트워크 승인·새 파일/본문 흐름 수정 제출; 미승인, 제품 테스트 NOT_RUN"
+    },
+    {
+      "sequence": 169,
+      "occurred_at": "2026-09-08T21:53:54.309Z",
+      "actor": "Astra",
+      "summary": "Batch A 합성 타입 흐름 직접 검증 통과 및 실제 로컬 SQLite 잠금 탐색 보존; 제품 검증과 구분"
     }
   ],
-  "version": "3eb24f72b2fca0973334c53b9ebdfd6be68495af887ab93d6dfa0668e008ee0e"
+  "version": "2fb5ca0c473b0f67171438696ee5a471bcd6d22749d0fe7fd59377088b528c56"
 }
