@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T17:06:48.642Z",
-  "last_sequence": 120,
+  "updated_at": "2026-09-08T17:08:18.533Z",
+  "last_sequence": 121,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "FD 4문서 작성 완료 후 두 번째 문제 회차에 Astra 집중 리뷰를 수행했다. 저장 위치·새 승인·모드 관계·격리 구체화 등을 수정 대상으로 확인했다.",
+    "summary": "집중 리뷰의 상태 전수 대조에서 queued·pending·started·skipped가 물리 스키마에서 거부되는 것을 확인했다. 기존 계약과 정렬할 수정 기준을 추가했다.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "DDT에 FD 4문서·집중 리뷰·실제 DDL 대조 근거를 전달해 수정 범위와 종료 기준을 독립 검토한다."
+      "FD 상태 타입 누락을 포함한 집중 리뷰 전체를 DDT에 독립 검토로 전달한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -69,7 +69,7 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T17:06:48.666Z",
+      "observed_at": "2026-09-08T17:08:18.555Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1854,7 +1854,13 @@
       "occurred_at": "2026-09-08T17:06:48.642Z",
       "actor": "Astra",
       "summary": "FD 4문서 작성 완료 후 두 번째 문제 회차에 Astra 집중 리뷰를 수행했다. 저장 위치·새 승인·모드 관계·격리 구체화 등을 수정 대상으로 확인했다."
+    },
+    {
+      "sequence": 121,
+      "occurred_at": "2026-09-08T17:08:18.533Z",
+      "actor": "Astra",
+      "summary": "집중 리뷰의 상태 전수 대조에서 queued·pending·started·skipped가 물리 스키마에서 거부되는 것을 확인했다. 기존 계약과 정렬할 수정 기준을 추가했다."
     }
   ],
-  "version": "6faf45071d40711ef71fc9c9dc927eb9eb2904d8e2ebb043e07a55c2ba83388b"
+  "version": "d7e577f7d49acf7ae87e1e7e66f23dfdf015030b15451a05bce56aaaf0378e6b"
 }
