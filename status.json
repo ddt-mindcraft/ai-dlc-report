@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T08:24:05.790Z",
-  "last_sequence": 35,
+  "updated_at": "2026-09-08T08:38:09.801Z",
+  "last_sequence": 36,
   "state": {
-    "stage": "Inception · requirements-analysis",
-    "status": "in_progress",
+    "stage": "INCEPTION · Requirements Analysis",
+    "status": "waiting_review",
     "summary": "DDT 질문 12개 답변 대조 · 일반 설계 선택 채택",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
@@ -34,9 +34,134 @@
     ],
     "approvals": [],
     "phase_status": {
-      "Inception": "미시작",
+      "Inception": "진행 중",
       "Construction": "미시작",
       "Operations": "자리표시자 · 참고 규칙 기준"
+    },
+    "aidlc_observation": {
+      "stage": "INCEPTION · Requirements Analysis",
+      "status": "waiting_review",
+      "phase": "Inception",
+      "observed_at": "2026-09-08T08:38:09.803Z",
+      "waiting_on": "Astra · 검토",
+      "total": 14,
+      "unresolved": 14,
+      "unanswered": 0,
+      "warnings": [],
+      "questions": [
+        {
+          "id": "011a4975-Q1",
+          "label": "Q1",
+          "title": "결과를 확인하지 못한 동작(예: 저장 직후 종료로 완료 기록이 없는 경우)의 확인 화면 기본 선택지 구성을 어떻게 할까요? (F-07, 6절 설계 결정 사항)",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "61d696fcfced2c8912517c00faee55269e794752400d1aa3363f98ff62963490"
+        },
+        {
+          "id": "011a4975-Q2",
+          "label": "Q2",
+          "title": "자격증명 보호 저장 방식의 우선순위를 어떻게 정할까요? (F-13, \"구체적인 방식은 설계에서 정한다\")",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "043c13e7b1168f95505874e6e826f6314c90930271c20486441804bacc41e1e4"
+        },
+        {
+          "id": "011a4975-Q3",
+          "label": "Q3",
+          "title": "Task·Episode·Run·Session·Knowledge·권한 결정 등 영속 이력의 저장 메커니즘을 무엇으로 할까요? (F-08, 4절 \"저장 형식은 설계에서 정한다\")",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "27b0489f20456b418691c32ad30750987d0d11f782be3f79328e601f7c3a423b"
+        },
+        {
+          "id": "011a4975-Q4",
+          "label": "Q4",
+          "title": "Pi 기반에서 초기(v1)에 지원할 모델 연결 방식 목록의 범위를 어떻게 할까요? (6절 설계 결정 사항 — \"일반 사용자 모델을 Airouter로 제한하지 않는다\")",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "0f9b057ccf0b2a4fa291ad247a0b7eb66a53b1d502a5bb6bb9ac4d093df2c2ff"
+        },
+        {
+          "id": "011a4975-Q5",
+          "label": "Q5",
+          "title": "오프라인 샘플 / Airouter 테스트·데모 / 실사용 모델 실행을 구분하는 경계를 어떻게 둘까요? (6절 설계 결정 사항 — 검증용 샘플이 실제 호출로 자동 전환되지 않아야 함)",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "729cdf747cc0d3ff27160f31f408d2fdb7149c8e55dcb91f0d8ab69104f8d912"
+        },
+        {
+          "id": "011a4975-Q6",
+          "label": "Q6",
+          "title": "관련 자료 검색의 시간 제한 기본값을 얼마로 확정할까요? (F-11, 5절 — 초기값 후보 60초, 변경 가능)",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "aa5119106f6041cba0d16202b92349e02cbde741dc09f29a5c5a06c26042dc17"
+        },
+        {
+          "id": "011a4975-Q7",
+          "label": "Q7",
+          "title": "Windows CLI/TUI의 기본 상호작용 방식을 어떻게 할까요? (F-15 사용성 설계 — 비개발자 친화)",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "4eb7c94a094bd9a413e275c475b41700b7e91c5cc677f76236d4395d1eeb1455"
+        },
+        {
+          "id": "011a4975-Q8",
+          "label": "Q8",
+          "title": "사용자 대면 언어 범위를 어떻게 할까요? (F-01/F-15 — \"쉬운 한국어\")",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "af9d17e93fc905415cf7d8b817302a010ecca92de6b39c5757577631df51f7d8"
+        },
+        {
+          "id": "011a4975-Q9",
+          "label": "Q9",
+          "title": "설정·이력 등 앱 데이터의 기본 저장 위치를 어디로 할까요? (F-01 — 작업 폴더/일반 설정/보호된 자격증명 저장 위치를 구분)",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "f104dcefa5e1cef799c31b938d173992909d500ab20fe2124b862deac035cebc"
+        },
+        {
+          "id": "011a4975-EXT-1",
+          "label": "EXT-1",
+          "title": "Should security extension rules be enforced for this project?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "7c2eeb930a9820533e954f30080c670712e1bc3e9b20eb54fcdb2c2c44b28213"
+        },
+        {
+          "id": "011a4975-EXT-2",
+          "label": "EXT-2",
+          "title": "Should the resiliency baseline be applied to this project?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "499a03644625454127244d4d16d54b38a32625f47181bf50bf1399471ccef11b"
+        },
+        {
+          "id": "011a4975-EXT-2a",
+          "label": "EXT-2a",
+          "title": "What are your RTO and RPO goals?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "633ea0127938bccb635beb11bea67b2243860200055480f9ed3b498a10ad1df1"
+        },
+        {
+          "id": "011a4975-EXT-2b",
+          "label": "EXT-2b",
+          "title": "운영 프로세스(변경관리·CI/CD·인시던트 대응) 처리 방식은?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "4da72ad02d88fe91efea62f376ed7f2689c0bb5f3eaa71f0a4f2072ae6cec88a"
+        },
+        {
+          "id": "011a4975-EXT-3",
+          "label": "EXT-3",
+          "title": "Should property-based testing (PBT) rules be enforced for this project?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "8f500785b8bcba9733ddeca3dc4dbb339f4de754d0cb9a5f2cf0b61c12bbfa88"
+        }
+      ]
     },
     "developer_decisions": [],
     "public_review_document": {
@@ -776,7 +901,13 @@
       "occurred_at": "2026-09-08T08:24:05.790Z",
       "actor": "Astra",
       "summary": "질문 대기·사이클 상태·과거 리뷰 표시 불일치 개선 검토: 6개 항목과 인수 기준 정리"
+    },
+    {
+      "sequence": 36,
+      "occurred_at": "2026-09-08T08:38:09.801Z",
+      "actor": "Astra",
+      "summary": "AI-DLC 원본 관찰·질문 버전 상태·핵심 현황 우선 배치·자동 갱신 구현"
     }
   ],
-  "version": "3cf918b0a0092e31a9006d7a13ac07027b5131e044f967fe348c3f1ec641b261"
+  "version": "73ad7cfafbbc83b990d839f4fb6c6b065d178cf44ac8a50622723ada856db26c"
 }
