@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T11:20:13.338Z",
-  "last_sequence": 65,
+  "updated_at": "2026-09-08T11:21:24.023Z",
+  "last_sequence": 66,
   "state": {
     "stage": "INCEPTION · Application Design",
     "status": "waiting_review",
-    "summary": "AP-WORKFLOW-002 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
+    "summary": "AP-APP-PLAN-001 · application-design plan DDT 검토 통과 및 Astra 위임 승인",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "필수 산출물 목록 정정 버전 승인 보존 후 Application Design 계획 별도 승인"
+      "새 Claude 세션에서 공통 계약 선행 후 설계 6문서 생성, 산출물 검토 대기에서 정지"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -35,6 +35,7 @@
       "DDT-STORY-PLAN-003 · approve",
       "DDT-STORIES-002 · approve",
       "DDT-WORKFLOW-REVIEW-001 · approve",
+      "DDT-APP-PLAN-REVIEW-002 · approve",
       "DDT-APP-PLAN-REVIEW-002 · approve"
     ],
     "approvals": [
@@ -42,7 +43,8 @@
       "AP-STORY-PLAN-001 · user-stories plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-STORIES-001 · user-stories artifact DDT 검토 통과 및 Astra 위임 승인",
       "AP-WORKFLOW-001 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
-      "AP-WORKFLOW-002 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인"
+      "AP-WORKFLOW-002 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
+      "AP-APP-PLAN-001 · application-design plan DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
       "Inception": "진행 중",
@@ -53,11 +55,11 @@
       "stage": "INCEPTION · Application Design",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T11:20:13.346Z",
+      "observed_at": "2026-09-08T11:21:24.032Z",
       "waiting_on": "Astra · 검토",
       "total": 11,
       "history_total": 21,
-      "unresolved": 10,
+      "unresolved": 0,
       "unanswered": 0,
       "warnings": [],
       "questions": [
@@ -67,7 +69,7 @@
           "active": true,
           "title": "컴포넌트 조직/배포 경계를 어떻게 잡는가? (단일 로컬 제품 — 독립 배포 서비스 분할을 새 요구로 만들지 않음; Units 수는 이후 Units Generation에서 결정)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "88ea3f61c8e25c29a1e1130e981a7aab8654ed736fc768aacf197dd5d991d552"
         },
         {
@@ -76,7 +78,7 @@
           "active": true,
           "title": "외부 폴더 접근·상태 변경(파일 쓰기/삭제/명령/네트워크)과 승인된 명령의 자식 프로세스에 대한 권한 강제 메커니즘을 어떻게 설계하는가? (단순 cwd/문자열 경로 검사만으로 강제된다고 단정하지 않음 — R-01)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "4f0c8a85732659a859eead9da9668ac67a7bf40abb7210a9b565748d781124bb"
         },
         {
@@ -85,7 +87,7 @@
           "active": true,
           "title": "권한 중개/OS 격리를 대상 Windows 환경에서 확립·검증할 수 없을 때의 설계 계약(정지 게이트)은?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "6ae6c3e5bab5793574b022f5bcf7d31dd15f17016aac6473e3cf95673ae3acc0"
         },
         {
@@ -94,7 +96,7 @@
           "active": true,
           "title": "앱 소유 이력 DB(SQLite) 의 배치 계약을 어떻게 두는가? (SQLite WAL이 네트워크 FS에서 동작하지 않을 수 있음 — R-02. 사용자 작업 자료 폴더 종류에는 임의 제한을 두지 않는 요구(§6.1/F-11) 를 침해하지 않을 것)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "01e2ce7c705a696fce18eb4acf6a01122aeca84151a1341bc19aec0c28489317"
         },
         {
@@ -103,7 +105,7 @@
           "active": true,
           "title": "본문 파일 publish 와 DB 트랜잭션 commit 의 정합성 계약(원자성이 자동으로 같지 않음 — R-03)을 어떤 순서/재정합 방식으로 두는가?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "98da3b6530b6e51f23f05c1c06df222fff7be98f0467ebbdbe1707c387026b48"
         },
         {
@@ -112,7 +114,7 @@
           "active": true,
           "title": "Pi SDK의 기본 셸·도구·자동 ResourceLoader·평문 auth·in-memory 세션을 어떤 경계 구조로 감싸는가? (세션 저장 경계 포함 — §7.1)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "5f3c70325f291e4fa801a1269f6eed2cfe94236ca63b2a67d04996865bfe7db8"
         },
         {
@@ -121,7 +123,7 @@
           "active": true,
           "title": "모드 backend 격리(offline/demo/user namespace + 불변 Run backend)를 저장 계층에 어떻게 매핑하는가? (표시 태그만으로 대신하지 않음 — INV-04)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "e0a13aeaa5079cf70887397c95a2335b6cc0fdef42105099e3c62d270e31f871"
         },
         {
@@ -130,7 +132,7 @@
           "active": true,
           "title": "승인 게이트 기반 실행 흐름(검색 → 맥락 미리보기 → 모델 호출 → 도구 승인 → 실행 → 결과 확인)의 서비스 오케스트레이션 패턴은?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "6486f2cc57312e8bf3301c4501578f4ddc48ca7f658e88277b8ab3c1c1870b0e"
         },
         {
@@ -139,7 +141,7 @@
           "active": true,
           "title": "검색 타임아웃(D-06, 60초 정책 확정) 과 콘텍스트 한도 분할(REQ-F11-3) 의 컴포넌트 소유·계약을 어떻게 나누는가? (새 검색 한도·제약을 추가하지 않으며 소유/부분 결과 노출 계약만 선택)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "d079251d594bf7cd3ea82969c14c7282f9ab77202ae48a9732190cc986d24f40"
         },
         {
@@ -148,7 +150,7 @@
           "active": true,
           "title": "Task/Episode/Run/Session/Knowledge의 식별·상태 모델링 방식은? (sameEpisode/newRun·결과 불확실 효과 포함 — 상태 종류·정책은 확정, 모델링 방식만 선택)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "9db5cae92c394163506c4d6fa547141a3a4a720782b881a63adb3818bd65de19"
         },
         {
@@ -1269,7 +1271,13 @@
       "occurred_at": "2026-09-08T11:20:13.338Z",
       "actor": "Astra",
       "summary": "AP-WORKFLOW-002 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인"
+    },
+    {
+      "sequence": 66,
+      "occurred_at": "2026-09-08T11:21:24.023Z",
+      "actor": "Astra",
+      "summary": "AP-APP-PLAN-001 · application-design plan DDT 검토 통과 및 Astra 위임 승인"
     }
   ],
-  "version": "9e968e44548b7e0e4e77aefb35801e106a897801251e4a59a2e9fca39bf4f2be"
+  "version": "4638ff6d95a1f889718ddfef86098d8a79d7be80b6d74fea4cfc53dd9f6af3db"
 }
