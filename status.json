@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T09:19:31.757Z",
-  "last_sequence": 45,
+  "updated_at": "2026-09-08T09:23:37.340Z",
+  "last_sequence": 46,
   "state": {
     "stage": "INCEPTION · User Stories",
     "status": "waiting_review",
-    "summary": "스토리 계획 작성 완료 · DDT 전송 자동 승인 검토 차단",
+    "summary": "DDT 스토리 계획 검토 수신 · 적용 조건과 검증 상태 분리 보완",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "DDT 전달 대상과 문서 범위 승인 후 스토리 계획 7개 질문 검토"
+      "Claude가 스토리 계획 7개 답변 및 DDT 지적 2건 반영 후 재검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -45,7 +45,7 @@
       "stage": "INCEPTION · User Stories",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T09:19:31.760Z",
+      "observed_at": "2026-09-08T09:23:37.342Z",
       "waiting_on": "Astra · 검토",
       "total": 14,
       "unresolved": 14,
@@ -964,7 +964,13 @@
       "occurred_at": "2026-09-08T09:19:31.757Z",
       "actor": "Astra",
       "summary": "스토리 계획 작성 완료 · DDT 전송 자동 승인 검토 차단"
+    },
+    {
+      "sequence": 46,
+      "occurred_at": "2026-09-08T09:23:37.340Z",
+      "actor": "Astra",
+      "summary": "DDT 스토리 계획 검토 수신 · 적용 조건과 검증 상태 분리 보완"
     }
   ],
-  "version": "910c8191802cfc1454b38767d5206a94f6e1309629d1f0c6686deb7e35909d86"
+  "version": "b4d2c0a15d96347bed15ee376286139647ca79ce3f5685818496a1ecbd79adff"
 }
