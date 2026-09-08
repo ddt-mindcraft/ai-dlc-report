@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T13:24:53.767Z",
-  "last_sequence": 73,
+  "updated_at": "2026-09-08T13:28:05.603Z",
+  "last_sequence": 74,
   "state": {
     "stage": "INCEPTION · Application Design",
     "status": "waiting_review",
-    "summary": "반복 문제 검출 시 Astra 집중 리뷰 의무화 · 현재 설계 단계에 적용",
+    "summary": "Astra 집중 리뷰 · 해소 주장과 실제 계약 불일치 확인",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "진행 중인 설계 수정 종료 후 Astra 집중 리뷰로 작성·검토·수정 오류 대조"
+      "DDT가 Astra 집중 리뷰의 지적·상위 기준 문제를 대조한 후 수정 범위 확정"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -55,7 +55,7 @@
       "stage": "INCEPTION · Application Design",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T13:24:53.779Z",
+      "observed_at": "2026-09-08T13:28:05.615Z",
       "waiting_on": "Astra · 검토",
       "total": 11,
       "history_total": 21,
@@ -1319,7 +1319,13 @@
       "occurred_at": "2026-09-08T13:24:53.767Z",
       "actor": "Astra",
       "summary": "반복 문제 검출 시 Astra 집중 리뷰 의무화 · 현재 설계 단계에 적용"
+    },
+    {
+      "sequence": 74,
+      "occurred_at": "2026-09-08T13:28:05.603Z",
+      "actor": "Astra",
+      "summary": "Astra 집중 리뷰 · 해소 주장과 실제 계약 불일치 확인"
     }
   ],
-  "version": "4c12188ade16f812067dabfd0995366bec9db578284d863cc26062460b6992ae"
+  "version": "aa8d31ecaba32bc4cc3e9c3d5d2b2e13eb40cce98ae92eabab094a1509858060"
 }
