@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T11:02:06.430Z",
-  "last_sequence": 62,
+  "updated_at": "2026-09-08T11:10:25.138Z",
+  "last_sequence": 63,
   "state": {
     "stage": "INCEPTION · Application Design",
     "status": "waiting_review",
-    "summary": "설계 답변 반영본 보존 · DDT 계획 검토 지적 4건",
+    "summary": "Claude 문서 전송 범위 재승인 확인 · 설계 계획 수정 재개",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "Claude가 설계계획 추적 오류·필수파일목록·17스토리매핑·SDK복원게이트 보완 후 재검토"
+      "Claude가 설계 계획 지적 4건 수정 후 DDT 재검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -51,7 +51,7 @@
       "stage": "INCEPTION · Application Design",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T11:02:06.445Z",
+      "observed_at": "2026-09-08T11:10:25.151Z",
       "waiting_on": "Astra · 검토",
       "total": 11,
       "history_total": 21,
@@ -1249,7 +1249,13 @@
       "occurred_at": "2026-09-08T11:02:06.430Z",
       "actor": "Astra",
       "summary": "설계 답변 반영본 보존 · DDT 계획 검토 지적 4건"
+    },
+    {
+      "sequence": 63,
+      "occurred_at": "2026-09-08T11:10:25.138Z",
+      "actor": "Astra",
+      "summary": "Claude 문서 전송 범위 재승인 확인 · 설계 계획 수정 재개"
     }
   ],
-  "version": "dadea314d2a8d80ffb2d5864bf01439d7379125a3b01a96cd949df4c78477123"
+  "version": "3c44744806fccda0a5068dab83ec02dbec0be22aa5b889ee345a8cc8bf519809"
 }
