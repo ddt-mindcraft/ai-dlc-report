@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T06:10:42.835Z",
-  "last_sequence": 14,
+  "updated_at": "2026-09-08T06:14:44.854Z",
+  "last_sequence": 15,
   "state": {
     "stage": "초기 입력 준비 · 계획 수립",
     "status": "planned",
@@ -40,7 +40,8 @@
       "Inception": "미시작",
       "Construction": "미시작",
       "Operations": "자리표시자 · 참고 규칙 기준"
-    }
+    },
+    "developer_decisions": []
   },
   "events": [
     {
@@ -126,7 +127,13 @@
       "occurred_at": "2026-09-08T06:10:42.835Z",
       "actor": "Astra",
       "summary": "공개 리포트 생성기·기록 후 Git/공개 동기화 구현 및 공개 저장소 초기 설정"
+    },
+    {
+      "sequence": 15,
+      "occurred_at": "2026-09-08T06:14:44.854Z",
+      "actor": "Astra",
+      "summary": "공개 GitHub Pages 리포트 배포와 Astra 기록 후 자동 동기화 검증 완료"
     }
   ],
-  "version": "51923678264c67faac35944d67971b53f2b5442c68f267b7b665963021c88303"
+  "version": "a38b74f63c77ff49d78f423ae4236d9c754bddaf7b9db8067434e3404c17890d"
 }
