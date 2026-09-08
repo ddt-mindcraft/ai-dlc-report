@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T08:17:09.564Z",
-  "last_sequence": 32,
+  "updated_at": "2026-09-08T08:18:42.609Z",
+  "last_sequence": 33,
   "state": {
     "stage": "Inception · requirements-analysis",
     "status": "in_progress",
-    "summary": "DDT 제품 기준선 검토 수신 · 권한·연결·단일 EXE 위험 확인",
+    "summary": "요구사항 질문 9개 생성 · 확장 탐색 누락 보완 예정",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "DDT 권고를 요구사항 질문에 매핑하고 Claude 자체 문서에서 반영 확인"
+      "확장 opt-in 파일 직접 경로 전달 및 DDT 질문별 답변 검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -758,7 +758,13 @@
       "occurred_at": "2026-09-08T08:17:09.564Z",
       "actor": "Astra",
       "summary": "DDT 제품 기준선 검토 수신 · 권한·연결·단일 EXE 위험 확인"
+    },
+    {
+      "sequence": 33,
+      "occurred_at": "2026-09-08T08:18:42.609Z",
+      "actor": "Astra",
+      "summary": "요구사항 질문 9개 생성 · 확장 탐색 누락 보완 예정"
     }
   ],
-  "version": "59a20d3b0c1f3bc725c934ed119c33f290326cec1a176415b2baffe001d41140"
+  "version": "43a4a0718c8f27d578fce7d8b65073767b2cf0876c4f0866df864ed7db123fd0"
 }
