@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T19:15:52.792Z",
-  "last_sequence": 143,
+  "updated_at": "2026-09-08T19:21:03.976Z",
+  "last_sequence": 144,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "잔여 경로와 직접 의존성 수정 후 Astra가 75개 작업·122개 작성 경로를 직접 대조했다.",
+    "summary": "AP-CODE-PLAN-001 · code-generation plan DDT 검토 통과 및 Astra 위임 승인",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "보완된 정확한 코드 계획과 집중 리뷰 해소 근거를 DDT 독립 재검토에 제출한다."
+      "승인된 CG-001 package.json을 생성한 뒤 실제 npm 설치 경계로 진행한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -43,7 +43,8 @@
       "DDT-UNITS-PLAN-001 · approve",
       "DDT-INCEPTION-FINAL-005 · approve",
       "DDT-FD-PLAN-002 · approve",
-      "DDT-FD-ARTIFACT-003 · approve"
+      "DDT-FD-ARTIFACT-003 · approve",
+      "DDT-CODE-PLAN-002 · approve"
     ],
     "approvals": [
       "AP-REQ-001 · Requirements r1.1 · Astra 위임 승인",
@@ -60,7 +61,8 @@
       "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인",
       "AP-INCEPTION-001 · Inception 완료 승인",
       "AP-FD-PLAN-001 · functional-design plan DDT 검토 통과 및 Astra 위임 승인",
-      "AP-FD-001 · functional-design artifacts DDT 검토 통과 및 Astra 위임 승인"
+      "AP-FD-001 · functional-design artifacts DDT 검토 통과 및 Astra 위임 승인",
+      "AP-CODE-PLAN-001 · code-generation plan DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
       "Inception": "완료",
@@ -71,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T19:15:52.809Z",
+      "observed_at": "2026-09-08T19:21:04.001Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1994,7 +1996,13 @@
       "occurred_at": "2026-09-08T19:15:52.792Z",
       "actor": "Astra",
       "summary": "잔여 경로와 직접 의존성 수정 후 Astra가 75개 작업·122개 작성 경로를 직접 대조했다."
+    },
+    {
+      "sequence": 144,
+      "occurred_at": "2026-09-08T19:21:03.976Z",
+      "actor": "Astra",
+      "summary": "AP-CODE-PLAN-001 · code-generation plan DDT 검토 통과 및 Astra 위임 승인"
     }
   ],
-  "version": "0ddb7263d922337083c8d2993f46cb77e80ecd4100bfde72a169d0528140787f"
+  "version": "aa2386567c13a5d1d8ac691276cfb1e38a2269bad96900ee7b76ea7c0ab50863"
 }
