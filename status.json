@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:04:07.629Z",
-  "last_sequence": 92,
+  "updated_at": "2026-09-08T15:05:31.926Z",
+  "last_sequence": 93,
   "state": {
     "stage": "INCEPTION · **Units Generation",
     "status": "waiting_review",
-    "summary": "Units Generation 계획 제출: 단일 제품 Unit과 논리 모듈, 17스토리 전수 매핑 및 필수 세 산출물 작성을 계획했다.",
+    "summary": "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "DDT Units 계획 검토 후 별도 승인하고 실제 작업 단위 3문서를 작성한다."
+      "새 Claude 세션에서 승인된 계획대로 작업 단위 3문서를 작성하고 산출물 검토 게이트에서 멈춘다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -40,7 +40,8 @@
       "DDT-STORY-SCOPE-001 · stories 승인 권고 / 실행계획 상태 수정 요청",
       "DDT-PLAN-STATUS-001 · approve",
       "DDT-PLAN-STATUS-001 · approve",
-      "DDT-APP-ARTIFACT-003 · approve"
+      "DDT-APP-ARTIFACT-003 · approve",
+      "DDT-UNITS-PLAN-001 · approve"
     ],
     "approvals": [
       "AP-REQ-001 · Requirements r1.1 · Astra 위임 승인",
@@ -52,7 +53,8 @@
       "AP-STORIES-002 · INV09 정정 stories 범위만 승인",
       "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-APP-PLAN-002 · application-design plan DDT 검토 통과 및 Astra 위임 승인",
-      "AP-APP-001 · application-design artifact DDT 검토 통과 및 Astra 위임 승인"
+      "AP-APP-001 · application-design artifact DDT 검토 통과 및 Astra 위임 승인",
+      "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
       "Inception": "진행 중",
@@ -63,11 +65,11 @@
       "stage": "INCEPTION · **Units Generation",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:04:07.640Z",
+      "observed_at": "2026-09-08T15:05:31.935Z",
       "waiting_on": "Astra · 검토",
       "total": 17,
       "history_total": 21,
-      "unresolved": 6,
+      "unresolved": 0,
       "unanswered": 0,
       "warnings": [],
       "questions": [
@@ -239,7 +241,7 @@
           "active": true,
           "title": "어떤 기준으로 17개 스토리를 Unit/모듈로 묶는가? (A) 각 Epic을 별도 Unit으로 분리 (B) 전 제품을 단일 Unit으로 두고 Epic/도메인을 논리 모듈로 그룹화 (C) 기술 계층별 분리 Unit (D) 기타.",
           "owner": "담당 확인 필요",
-          "status": "answered",
+          "status": "resolved",
           "version": "8c0e5354eb8325d0c044498a9ce0d01d3e94c1c0e8e7d7d6e3aebecb3d129b61"
         },
         {
@@ -248,7 +250,7 @@
           "active": true,
           "title": "Unit 간 통합 방식·공유 리소스·통신 패턴은 무엇인가?",
           "owner": "담당 확인 필요",
-          "status": "answered",
+          "status": "resolved",
           "version": "081c62a1573edada8401f93bfab99f028f85d2b4f087a199f990be84da7910a3"
         },
         {
@@ -257,7 +259,7 @@
           "active": true,
           "title": "팀 구조·소유권 경계·협업 모델을 Unit 경계에 정렬하는가?",
           "owner": "담당 확인 필요",
-          "status": "answered",
+          "status": "resolved",
           "version": "2574d6803379fdbc94c04847fe41759b4efc158277d32e69facd8f5164809cbc"
         },
         {
@@ -266,7 +268,7 @@
           "active": true,
           "title": "Unit별로 다른 scalability/deployment 요구가 있는가?",
           "owner": "담당 확인 필요",
-          "status": "answered",
+          "status": "resolved",
           "version": "e028dd1ee72f54b3a2e86d89f41f4b76cc5cf4aef226a859426428dbdce2de04"
         },
         {
@@ -275,7 +277,7 @@
           "active": true,
           "title": "비즈니스 도메인 경계/바운디드 컨텍스트를 Unit에 어떻게 반영하는가?",
           "owner": "담당 확인 필요",
-          "status": "answered",
+          "status": "resolved",
           "version": "80fcd14986534d757d6d8ee5d90af9de7f781dbb05b7c8808f6e887581cd6d2b"
         },
         {
@@ -284,7 +286,7 @@
           "active": true,
           "title": "(규칙상 Greenfield multi-unit 전용 질문) 배포 모델과 디렉터리 구조 선호는?",
           "owner": "담당 확인 필요",
-          "status": "answered",
+          "status": "resolved",
           "version": "81062b5de9edaedc2eb537f68d38444814f85ae2274585874a2aa0a5ea29e604"
         },
         {
@@ -1495,7 +1497,13 @@
       "occurred_at": "2026-09-08T15:04:07.629Z",
       "actor": "Astra",
       "summary": "Units Generation 계획 제출: 단일 제품 Unit과 논리 모듈, 17스토리 전수 매핑 및 필수 세 산출물 작성을 계획했다."
+    },
+    {
+      "sequence": 93,
+      "occurred_at": "2026-09-08T15:05:31.926Z",
+      "actor": "Astra",
+      "summary": "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인"
     }
   ],
-  "version": "5b3b8f0f4cd9fc1abb0ecd5b066bc8fa1cd3949a22448cb8b7a99d320872988d"
+  "version": "fa60f23d2208460aafef39b46e515de3e2819c70194a667591d2dfeb88ee63cb"
 }
