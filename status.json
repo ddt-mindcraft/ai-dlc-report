@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T09:42:01.203Z",
-  "last_sequence": 49,
+  "updated_at": "2026-09-08T09:54:19.809Z",
+  "last_sequence": 50,
   "state": {
     "stage": "INCEPTION · User Stories",
-    "status": "waiting_review",
-    "summary": "AP-STORY-PLAN-001 · user-stories plan DDT 검토 통과 및 Astra 위임 승인",
+    "status": "needs_reconciliation",
+    "summary": "원본 확인 필요 · 질문 21개 · 미답변 0개",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "새 Claude 세션에서 계획 위임 승인 반영 및 stories/personas 전체 생성 후 검토 대기"
+      "원본 형식과 리포트 상태를 확인하고 재관찰"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -45,15 +45,17 @@
     },
     "aidlc_observation": {
       "stage": "INCEPTION · User Stories",
-      "status": "waiting_review",
+      "status": "needs_reconciliation",
       "phase": "Inception",
-      "observed_at": "2026-09-08T09:42:01.206Z",
-      "waiting_on": "Astra · 검토",
-      "total": 7,
-      "history_total": 14,
-      "unresolved": 0,
+      "observed_at": "2026-09-08T09:54:19.813Z",
+      "waiting_on": "Astra 원본 확인",
+      "total": 21,
+      "history_total": 0,
+      "unresolved": 14,
       "unanswered": 0,
-      "warnings": [],
+      "warnings": [
+        "현행 질문 문서를 현재 단계/Next Step에서 특정하지 못했습니다."
+      ],
       "questions": [
         {
           "id": "5e8b16ea-Q1",
@@ -120,8 +122,8 @@
         },
         {
           "id": "011a4975-Q1",
-          "label": "이전 · Q1",
-          "active": false,
+          "label": "Q1",
+          "active": true,
           "title": "결과를 확인하지 못한 동작(예: 저장 직후 종료로 완료 기록이 없는 경우)의 확인 화면 기본 선택지 구성을 어떻게 할까요? (F-07, 6절 설계 결정 사항)",
           "owner": "Astra",
           "status": "submitted",
@@ -129,8 +131,8 @@
         },
         {
           "id": "011a4975-Q2",
-          "label": "이전 · Q2",
-          "active": false,
+          "label": "Q2",
+          "active": true,
           "title": "자격증명 보호 저장 방식의 우선순위를 어떻게 정할까요? (F-13, \"구체적인 방식은 설계에서 정한다\")",
           "owner": "Astra",
           "status": "submitted",
@@ -138,8 +140,8 @@
         },
         {
           "id": "011a4975-Q3",
-          "label": "이전 · Q3",
-          "active": false,
+          "label": "Q3",
+          "active": true,
           "title": "Task·Episode·Run·Session·Knowledge·권한 결정 등 영속 이력의 저장 메커니즘을 무엇으로 할까요? (F-08, 4절 \"저장 형식은 설계에서 정한다\")",
           "owner": "Astra",
           "status": "submitted",
@@ -147,8 +149,8 @@
         },
         {
           "id": "011a4975-Q4",
-          "label": "이전 · Q4",
-          "active": false,
+          "label": "Q4",
+          "active": true,
           "title": "Pi 기반에서 초기(v1)에 지원할 모델 연결 방식 목록의 범위를 어떻게 할까요? (6절 설계 결정 사항 — \"일반 사용자 모델을 Airouter로 제한하지 않는다\")",
           "owner": "Astra",
           "status": "submitted",
@@ -156,8 +158,8 @@
         },
         {
           "id": "011a4975-Q5",
-          "label": "이전 · Q5",
-          "active": false,
+          "label": "Q5",
+          "active": true,
           "title": "오프라인 샘플 / Airouter 테스트·데모 / 실사용 모델 실행을 구분하는 경계를 어떻게 둘까요? (6절 설계 결정 사항 — 검증용 샘플이 실제 호출로 자동 전환되지 않아야 함)",
           "owner": "Astra",
           "status": "submitted",
@@ -165,8 +167,8 @@
         },
         {
           "id": "011a4975-Q6",
-          "label": "이전 · Q6",
-          "active": false,
+          "label": "Q6",
+          "active": true,
           "title": "관련 자료 검색의 시간 제한 기본값을 얼마로 확정할까요? (F-11, 5절 — 초기값 후보 60초, 변경 가능)",
           "owner": "Astra",
           "status": "submitted",
@@ -174,8 +176,8 @@
         },
         {
           "id": "011a4975-Q7",
-          "label": "이전 · Q7",
-          "active": false,
+          "label": "Q7",
+          "active": true,
           "title": "Windows CLI/TUI의 기본 상호작용 방식을 어떻게 할까요? (F-15 사용성 설계 — 비개발자 친화)",
           "owner": "Astra",
           "status": "submitted",
@@ -183,8 +185,8 @@
         },
         {
           "id": "011a4975-Q8",
-          "label": "이전 · Q8",
-          "active": false,
+          "label": "Q8",
+          "active": true,
           "title": "사용자 대면 언어 범위를 어떻게 할까요? (F-01/F-15 — \"쉬운 한국어\")",
           "owner": "Astra",
           "status": "submitted",
@@ -192,8 +194,8 @@
         },
         {
           "id": "011a4975-Q9",
-          "label": "이전 · Q9",
-          "active": false,
+          "label": "Q9",
+          "active": true,
           "title": "설정·이력 등 앱 데이터의 기본 저장 위치를 어디로 할까요? (F-01 — 작업 폴더/일반 설정/보호된 자격증명 저장 위치를 구분)",
           "owner": "Astra",
           "status": "submitted",
@@ -201,8 +203,8 @@
         },
         {
           "id": "011a4975-EXT-1",
-          "label": "이전 · EXT-1",
-          "active": false,
+          "label": "EXT-1",
+          "active": true,
           "title": "Should security extension rules be enforced for this project?",
           "owner": "Astra",
           "status": "submitted",
@@ -210,8 +212,8 @@
         },
         {
           "id": "011a4975-EXT-2",
-          "label": "이전 · EXT-2",
-          "active": false,
+          "label": "EXT-2",
+          "active": true,
           "title": "Should the resiliency baseline be applied to this project?",
           "owner": "Astra",
           "status": "submitted",
@@ -219,8 +221,8 @@
         },
         {
           "id": "011a4975-EXT-2a",
-          "label": "이전 · EXT-2a",
-          "active": false,
+          "label": "EXT-2a",
+          "active": true,
           "title": "What are your RTO and RPO goals?",
           "owner": "Astra",
           "status": "submitted",
@@ -228,8 +230,8 @@
         },
         {
           "id": "011a4975-EXT-2b",
-          "label": "이전 · EXT-2b",
-          "active": false,
+          "label": "EXT-2b",
+          "active": true,
           "title": "운영 프로세스(변경관리·CI/CD·인시던트 대응) 처리 방식은?",
           "owner": "Astra",
           "status": "submitted",
@@ -237,8 +239,8 @@
         },
         {
           "id": "011a4975-EXT-3",
-          "label": "이전 · EXT-3",
-          "active": false,
+          "label": "EXT-3",
+          "active": true,
           "title": "Should property-based testing (PBT) rules be enforced for this project?",
           "owner": "Astra",
           "status": "submitted",
@@ -1068,7 +1070,13 @@
       "occurred_at": "2026-09-08T09:42:01.203Z",
       "actor": "Astra",
       "summary": "AP-STORY-PLAN-001 · user-stories plan DDT 검토 통과 및 Astra 위임 승인"
+    },
+    {
+      "sequence": 50,
+      "occurred_at": "2026-09-08T09:54:19.809Z",
+      "actor": "Astra",
+      "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · User Stories"
     }
   ],
-  "version": "54de69500cc8e4daa818cd7d5f05b1c692f03172f95bc18960126857d3fca341"
+  "version": "4d04fe57f88304468096659eeef6067948abc0d87962116ac81b0317a12bbbcc"
 }
