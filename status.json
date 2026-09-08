@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T08:18:42.609Z",
-  "last_sequence": 33,
+  "updated_at": "2026-09-08T08:22:36.638Z",
+  "last_sequence": 34,
   "state": {
     "stage": "Inception · requirements-analysis",
     "status": "in_progress",
-    "summary": "요구사항 질문 9개 생성 · 확장 탐색 누락 보완 예정",
+    "summary": "DDT 질문 12개 답변 대조 · 일반 설계 선택 채택",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "확장 opt-in 파일 직접 경로 전달 및 DDT 질문별 답변 검토"
+      "채택한 질문 답변과 확장 설정을 Claude 자체 문서에 반영하고 요구사항 생성"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -764,7 +764,13 @@
       "occurred_at": "2026-09-08T08:18:42.609Z",
       "actor": "Astra",
       "summary": "요구사항 질문 9개 생성 · 확장 탐색 누락 보완 예정"
+    },
+    {
+      "sequence": 34,
+      "occurred_at": "2026-09-08T08:22:36.638Z",
+      "actor": "Astra",
+      "summary": "DDT 질문 12개 답변 대조 · 일반 설계 선택 채택"
     }
   ],
-  "version": "43a4a0718c8f27d578fce7d8b65073767b2cf0876c4f0866df864ed7db123fd0"
+  "version": "6db25e84ea100df93c070e71a9ed11ec15b576ff4952db4e39ef90183fe78203"
 }
