@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T10:48:00.188Z",
-  "last_sequence": 59,
+  "updated_at": "2026-09-08T10:52:26.101Z",
+  "last_sequence": 60,
   "state": {
     "stage": "INCEPTION · Application Design",
-    "status": "waiting_answers",
-    "summary": "설계 계획과 DDT 조언 보존 · 권한·영속·Pi·모드 경계 선택",
+    "status": "waiting_review",
+    "summary": "최종 리포트의 실제 산출물 링크·검토 패널 준비",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "Claude가 설계 질문10개 답변·경계·실패조건·검증게이트 반영 후 계획 재검토"
+      "Claude 설계 답변 반영 완료 후 DDT 계획 재검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -49,14 +49,14 @@
     },
     "aidlc_observation": {
       "stage": "INCEPTION · Application Design",
-      "status": "waiting_answers",
+      "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T10:48:00.193Z",
-      "waiting_on": "Astra",
+      "observed_at": "2026-09-08T10:52:26.107Z",
+      "waiting_on": "Astra · 검토",
       "total": 11,
       "history_total": 21,
       "unresolved": 10,
-      "unanswered": 10,
+      "unanswered": 0,
       "warnings": [],
       "questions": [
         {
@@ -65,8 +65,8 @@
           "active": true,
           "title": "컴포넌트 조직/배포 경계를 어떻게 잡는가? (단일 로컬 제품 — 독립 배포 서비스 분할을 새 요구로 만들지 않음; Units 수는 이후 Units Generation에서 결정)",
           "owner": "Astra",
-          "status": "generated",
-          "version": "78ebfc395f4de85f287adf4e8b331ccb9bc4ea9e0ea867a7cec17134d6f86ba2"
+          "status": "answered",
+          "version": "88ea3f61c8e25c29a1e1130e981a7aab8654ed736fc768aacf197dd5d991d552"
         },
         {
           "id": "ef027564-AD-02",
@@ -74,8 +74,8 @@
           "active": true,
           "title": "외부 폴더 접근·상태 변경(파일 쓰기/삭제/명령/네트워크)과 승인된 명령의 자식 프로세스에 대한 권한 강제 메커니즘을 어떻게 설계하는가? (단순 cwd/문자열 경로 검사만으로 강제된다고 단정하지 않음 — R-01)",
           "owner": "Astra",
-          "status": "generated",
-          "version": "95669851185fbc8a6eee82506f00fda6cb062b0395f06c9d97cf620998018d76"
+          "status": "answered",
+          "version": "4f0c8a85732659a859eead9da9668ac67a7bf40abb7210a9b565748d781124bb"
         },
         {
           "id": "ef027564-AD-03",
@@ -83,8 +83,8 @@
           "active": true,
           "title": "권한 중개/OS 격리를 대상 Windows 환경에서 확립·검증할 수 없을 때의 설계 계약(정지 게이트)은?",
           "owner": "Astra",
-          "status": "generated",
-          "version": "17efd965b0d8503220dd627f742986a61267130beed7f194d46428696224653f"
+          "status": "answered",
+          "version": "6ae6c3e5bab5793574b022f5bcf7d31dd15f17016aac6473e3cf95673ae3acc0"
         },
         {
           "id": "ef027564-AD-04",
@@ -92,8 +92,8 @@
           "active": true,
           "title": "앱 소유 이력 DB(SQLite) 의 배치 계약을 어떻게 두는가? (SQLite WAL이 네트워크 FS에서 동작하지 않을 수 있음 — R-02. 사용자 작업 자료 폴더 종류에는 임의 제한을 두지 않는 요구(§6.1/F-11) 를 침해하지 않을 것)",
           "owner": "Astra",
-          "status": "generated",
-          "version": "d9c23744396d1756cff97a69fdd5cf2af5d895791412685d090823da513d369c"
+          "status": "answered",
+          "version": "01e2ce7c705a696fce18eb4acf6a01122aeca84151a1341bc19aec0c28489317"
         },
         {
           "id": "ef027564-AD-05",
@@ -101,8 +101,8 @@
           "active": true,
           "title": "본문 파일 publish 와 DB 트랜잭션 commit 의 정합성 계약(원자성이 자동으로 같지 않음 — R-03)을 어떤 순서/재정합 방식으로 두는가?",
           "owner": "Astra",
-          "status": "generated",
-          "version": "e0c09bceaa3c92b76f807eb35d1e4fefdd40b4c3bffa6715a9e3136e7ecab2ab"
+          "status": "answered",
+          "version": "98da3b6530b6e51f23f05c1c06df222fff7be98f0467ebbdbe1707c387026b48"
         },
         {
           "id": "ef027564-AD-06",
@@ -110,8 +110,8 @@
           "active": true,
           "title": "Pi SDK의 기본 셸·도구·자동 ResourceLoader·평문 auth·in-memory 세션을 어떤 경계 구조로 감싸는가? (세션 저장 경계 포함 — §7.1)",
           "owner": "Astra",
-          "status": "generated",
-          "version": "b10772e0b8e1cf9c8b0ab41000d9ad5fef67c4e62a6770cfeb424e5ca343ff40"
+          "status": "answered",
+          "version": "639301286dcec3f1db68a0ad1fa500d7278e1de0f71e4adb8f1d43e15bfc4dba"
         },
         {
           "id": "ef027564-AD-07",
@@ -119,8 +119,8 @@
           "active": true,
           "title": "모드 backend 격리(offline/demo/user namespace + 불변 Run backend)를 저장 계층에 어떻게 매핑하는가? (표시 태그만으로 대신하지 않음 — INV-04)",
           "owner": "Astra",
-          "status": "generated",
-          "version": "c6ca3ef8778d8dfc25ae27e589901dc826f7f43158c568047eeba1d4bab86a53"
+          "status": "answered",
+          "version": "e0a13aeaa5079cf70887397c95a2335b6cc0fdef42105099e3c62d270e31f871"
         },
         {
           "id": "ef027564-AD-08",
@@ -128,8 +128,8 @@
           "active": true,
           "title": "승인 게이트 기반 실행 흐름(검색 → 맥락 미리보기 → 모델 호출 → 도구 승인 → 실행 → 결과 확인)의 서비스 오케스트레이션 패턴은?",
           "owner": "Astra",
-          "status": "generated",
-          "version": "0ccad3b0a5a058cc9671e96bbc7f48fea5aea27dd86221eb6e865cad8564912b"
+          "status": "answered",
+          "version": "6486f2cc57312e8bf3301c4501578f4ddc48ca7f658e88277b8ab3c1c1870b0e"
         },
         {
           "id": "ef027564-AD-09",
@@ -137,8 +137,8 @@
           "active": true,
           "title": "검색 타임아웃(D-06, 60초 정책 확정) 과 콘텍스트 한도 분할(REQ-F11-3) 의 컴포넌트 소유·계약을 어떻게 나누는가? (새 검색 한도·제약을 추가하지 않으며 소유/부분 결과 노출 계약만 선택)",
           "owner": "Astra",
-          "status": "generated",
-          "version": "db1a71c24f2f8f8eeb52d05f977ac81062a9d85e730695ce0203f7fedfe313c9"
+          "status": "answered",
+          "version": "d079251d594bf7cd3ea82969c14c7282f9ab77202ae48a9732190cc986d24f40"
         },
         {
           "id": "ef027564-AD-10",
@@ -146,8 +146,8 @@
           "active": true,
           "title": "Task/Episode/Run/Session/Knowledge의 식별·상태 모델링 방식은? (sameEpisode/newRun·결과 불확실 효과 포함 — 상태 종류·정책은 확정, 모델링 방식만 선택)",
           "owner": "Astra",
-          "status": "generated",
-          "version": "6040d0fcf9131a50a2cd8f609fb3b7426badb72c3021a30ef2b14ab6f270cace"
+          "status": "answered",
+          "version": "c791717665b143532a53c24ff54dfeaa165c91f73e8f56e9382004b624dd5a1a"
         },
         {
           "id": "0a0aa184-WP-01",
@@ -1231,7 +1231,13 @@
       "occurred_at": "2026-09-08T10:48:00.188Z",
       "actor": "Astra",
       "summary": "설계 계획과 DDT 조언 보존 · 권한·영속·Pi·모드 경계 선택"
+    },
+    {
+      "sequence": 60,
+      "occurred_at": "2026-09-08T10:52:26.101Z",
+      "actor": "Astra",
+      "summary": "최종 리포트의 실제 산출물 링크·검토 패널 준비"
     }
   ],
-  "version": "6a0038da1a31671a3983c4e6b66a42aae04d08a2c05100a0e2a56f4fa2db5389"
+  "version": "70f5b145fd2ba68ef326a7323b8bf1382f64bfb5c30215fd96e949c1d4f867a0"
 }
