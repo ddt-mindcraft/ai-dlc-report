@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:40:16.857Z",
-  "last_sequence": 103,
+  "updated_at": "2026-09-08T15:42:34.768Z",
+  "last_sequence": 104,
   "state": {
     "stage": "INCEPTION · **Units Generation",
     "status": "waiting_review",
-    "summary": "DDT 응답 식별자 불일치로 결과를 수용하지 않았다. 현재 버전 검토와 과거 승인 시점 근거를 구분하도록 호출문을 정정했다.",
+    "summary": "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "요청 ID와 manifest를 명시한 새 DDT 호출로 현재 상태와 과거 승인 시점을 독립 재판정한다."
+      "새 Claude 세션에서 승인된 Units와 Inception 종료를 상태·감사·현행 Units 계획의 상태 표기에만 반영하고 Construction 이전에서 정지한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -41,7 +41,8 @@
       "DDT-PLAN-STATUS-001 · approve",
       "DDT-PLAN-STATUS-001 · approve",
       "DDT-APP-ARTIFACT-003 · approve",
-      "DDT-UNITS-PLAN-001 · approve"
+      "DDT-UNITS-PLAN-001 · approve",
+      "DDT-INCEPTION-FINAL-005 · approve"
     ],
     "approvals": [
       "AP-REQ-001 · Requirements r1.1 · Astra 위임 승인",
@@ -54,7 +55,8 @@
       "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-APP-PLAN-002 · application-design plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-APP-001 · application-design artifact DDT 검토 통과 및 Astra 위임 승인",
-      "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인"
+      "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인",
+      "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
       "Inception": "진행 중",
@@ -65,7 +67,7 @@
       "stage": "INCEPTION · **Units Generation",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:40:16.867Z",
+      "observed_at": "2026-09-08T15:42:34.778Z",
       "waiting_on": "Astra · 검토",
       "total": 17,
       "history_total": 21,
@@ -1563,7 +1565,13 @@
       "occurred_at": "2026-09-08T15:40:16.857Z",
       "actor": "Astra",
       "summary": "DDT 응답 식별자 불일치로 결과를 수용하지 않았다. 현재 버전 검토와 과거 승인 시점 근거를 구분하도록 호출문을 정정했다."
+    },
+    {
+      "sequence": 104,
+      "occurred_at": "2026-09-08T15:42:34.768Z",
+      "actor": "Astra",
+      "summary": "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인"
     }
   ],
-  "version": "9c66fee307835d0c0bdae2ef81693ec4851f7243aefbd22e2eb4c62268b6999d"
+  "version": "ae96b886e5319c2959b07461ce534c09b94ee8e3032d7c2768fb5a78f01736dc"
 }
