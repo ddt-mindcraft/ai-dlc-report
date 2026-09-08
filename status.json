@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T17:53:56.168Z",
-  "last_sequence": 128,
+  "updated_at": "2026-09-08T17:57:10.280Z",
+  "last_sequence": 129,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "동일 Episode 모드 전환 수정본 보존. SQL 정상·거부 사례와 85개 기준 추적을 확인했으며 남은 본문 저장 정합 문제를 집중 검토 중.",
+    "summary": "DDT가 모드 전환·격리·셋업·추적 수정의 설계 정합성을 확인. 남은 두 본문 저장 지적을 확인했으며 기능 설계는 아직 미승인.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "고정된 FD 수정본을 DDT 독립 재검토하고 남은 본문 namespace/직렬화 정합 지적을 대조한다."
+      "DDT가 확인한 두 가지 본문 저장·직렬화 지적만 국소 수정한 뒤 최종 FD 검토를 받는다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -69,7 +69,7 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T17:53:56.191Z",
+      "observed_at": "2026-09-08T17:57:10.298Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1902,7 +1902,13 @@
       "occurred_at": "2026-09-08T17:53:56.168Z",
       "actor": "Astra",
       "summary": "동일 Episode 모드 전환 수정본 보존. SQL 정상·거부 사례와 85개 기준 추적을 확인했으며 남은 본문 저장 정합 문제를 집중 검토 중."
+    },
+    {
+      "sequence": 129,
+      "occurred_at": "2026-09-08T17:57:10.280Z",
+      "actor": "Astra",
+      "summary": "DDT가 모드 전환·격리·셋업·추적 수정의 설계 정합성을 확인. 남은 두 본문 저장 지적을 확인했으며 기능 설계는 아직 미승인."
     }
   ],
-  "version": "8612b37175d6034544b1b2214936f36c43084f433cd1dafb3951f131914f41e3"
+  "version": "eab984a0f427995d7b87da4dbc38057a3bb3f8c7c6296e543391f3811c0c1c4d"
 }
