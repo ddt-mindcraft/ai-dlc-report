@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T06:39:20.840Z",
-  "last_sequence": 21,
+  "updated_at": "2026-09-08T07:11:28.685Z",
+  "last_sequence": 22,
   "state": {
     "stage": "제품 입력 초안 · 팀 리뷰",
     "status": "draft_review",
@@ -551,7 +551,13 @@
       "occurred_at": "2026-09-08T06:39:20.840Z",
       "actor": "Astra",
       "summary": "실제 제품 입력 초안 MC-INPUT-001 r0.1 작성 및 행사·평가·Table Order 반영 코멘트 분리"
+    },
+    {
+      "sequence": 22,
+      "occurred_at": "2026-09-08T07:11:28.685Z",
+      "actor": "Astra",
+      "summary": "공개 리포트 게시를 기록 시점 동기화 체계로 통일하고 구형 push 트리거 미러 workflow 정리"
     }
   ],
-  "version": "76518e63c0dee892b8fcf605971ca2c9587c8529a07e2a3f7fb1deab6097b36b"
+  "version": "a0748044b5f62c61b8c3141ab3ea8371b4fe9f3db83f8226b45ca5ba07506ac0"
 }
