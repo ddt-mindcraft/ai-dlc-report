@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T16:42:12.198Z",
-  "last_sequence": 117,
+  "updated_at": "2026-09-08T16:49:40.868Z",
+  "last_sequence": 118,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "AP-FD-PLAN-001 · functional-design plan DDT 검토 통과 및 Astra 위임 승인",
+    "summary": "Windows 격리의 공식 API와 한계를 대조해 명령 입출력·파일 객체·자식·IPC 검토 기준 5개를 준비했다. 구현 실증은 미실행.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "승인된 FD 계획의 4개 상세 산출물을 작성하고 기술·스키마를 근거와 함께 확정한다."
+      "실행 중인 FD 산출물에서 명령 입력/출력·핸들·IPC·자식 격리의 구체 경계를 대조한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -69,7 +69,7 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T16:42:12.208Z",
+      "observed_at": "2026-09-08T16:49:40.894Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1836,7 +1836,13 @@
       "occurred_at": "2026-09-08T16:42:12.198Z",
       "actor": "Astra",
       "summary": "AP-FD-PLAN-001 · functional-design plan DDT 검토 통과 및 Astra 위임 승인"
+    },
+    {
+      "sequence": 118,
+      "occurred_at": "2026-09-08T16:49:40.868Z",
+      "actor": "Astra",
+      "summary": "Windows 격리의 공식 API와 한계를 대조해 명령 입출력·파일 객체·자식·IPC 검토 기준 5개를 준비했다. 구현 실증은 미실행."
     }
   ],
-  "version": "d10fce764adea252133668427d15597a77a847dc768c72f6f2ff8c495f1d12cc"
+  "version": "453cbbddad67f4d66e8ce951714e8fe6f92a77b724f398ff8595072545b9c98b"
 }
