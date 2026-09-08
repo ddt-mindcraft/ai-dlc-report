@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T13:49:39.774Z",
-  "last_sequence": 80,
+  "updated_at": "2026-09-08T13:52:51.973Z",
+  "last_sequence": 81,
   "state": {
     "stage": "INCEPTION · **Workflow Planning",
     "status": "waiting_review",
-    "summary": "산출물 검토 대기 · 질문 11개 · 미답변 0개",
+    "summary": "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -19,11 +19,9 @@
     "in_progress": [
       "Application Design 수정 마무리·DDT 재검토"
     ],
-    "blockers": [
-      "실행계획 WF-01 상태 정합성 보완 필요"
-    ],
+    "blockers": [],
     "next_actions": [
-      "산출물 검토 결과를 대조하고 승인 또는 수정 요청을 별도로 기록"
+      "설계 계획 상태 정리본 별도 승인 후 집중 리뷰에 따른 수정으로 복귀"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -39,7 +37,8 @@
       "DDT-WORKFLOW-REVIEW-001 · approve",
       "DDT-APP-PLAN-REVIEW-002 · approve",
       "DDT-APP-PLAN-REVIEW-002 · approve",
-      "DDT-STORY-SCOPE-001 · stories 승인 권고 / 실행계획 상태 수정 요청"
+      "DDT-STORY-SCOPE-001 · stories 승인 권고 / 실행계획 상태 수정 요청",
+      "DDT-PLAN-STATUS-001 · approve"
     ],
     "approvals": [
       "AP-REQ-001 · Requirements r1.1 · Astra 위임 승인",
@@ -48,7 +47,8 @@
       "AP-WORKFLOW-001 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-WORKFLOW-002 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-APP-PLAN-001 · application-design plan DDT 검토 통과 및 Astra 위임 승인",
-      "AP-STORIES-002 · INV09 정정 stories 범위만 승인"
+      "AP-STORIES-002 · INV09 정정 stories 범위만 승인",
+      "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
       "Inception": "진행 중",
@@ -59,11 +59,11 @@
       "stage": "INCEPTION · **Workflow Planning",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T13:49:39.781Z",
+      "observed_at": "2026-09-08T13:52:51.984Z",
       "waiting_on": "Astra · 검토",
       "total": 11,
       "history_total": 21,
-      "unresolved": 2,
+      "unresolved": 1,
       "unanswered": 0,
       "warnings": [],
       "questions": [
@@ -163,7 +163,7 @@
           "active": true,
           "title": "활성 규칙 충돌(§7.1)을 고려할 때 Construction의 별도 NFR Requirements/NFR Design 스테이지를 어떻게 처리하는가? (기존 확정 NFR 내용·수치는 변경하지 않으며 단계 배치 방식만 선택한다. 본 질문의 선택 결정과 실제 계획 승인은 별개다.)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "8b0d3686d73f96bd728aaecfa0a4fa1d187347c8caf9d4d37562d590508e6094"
         },
         {
@@ -1365,7 +1365,13 @@
       "occurred_at": "2026-09-08T13:49:39.774Z",
       "actor": "Astra",
       "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · **Workflow Planning"
+    },
+    {
+      "sequence": 81,
+      "occurred_at": "2026-09-08T13:52:51.973Z",
+      "actor": "Astra",
+      "summary": "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인"
     }
   ],
-  "version": "13ec65f47cc1a2d8494310d292f0d55dcf02766c28b4b2f87f826d6b9c0a695b"
+  "version": "79433e09e7d736800874b391299d9dcd7ad72ca88d7c139f1e1eb90efdfdb3fb"
 }
