@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T09:34:10.863Z",
-  "last_sequence": 47,
+  "updated_at": "2026-09-08T09:39:41.867Z",
+  "last_sequence": 48,
   "state": {
     "stage": "INCEPTION · User Stories",
     "status": "waiting_review",
-    "summary": "스토리 계획 수정본 보존 · Astra 대조 지적 2건으로 승인 보류",
+    "summary": "산출물 검토 대기 · 질문 7개 · 미답변 0개",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "Claude가 승인 이력 저장과 모드 격리 예시 오류를 국소 수정한 뒤 DDT 재검토"
+      "산출물 검토 결과를 대조하고 승인 또는 수정 요청을 별도로 기록"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -45,7 +45,7 @@
       "stage": "INCEPTION · User Stories",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T09:34:10.869Z",
+      "observed_at": "2026-09-08T09:39:41.871Z",
       "waiting_on": "Astra · 검토",
       "total": 7,
       "history_total": 14,
@@ -60,7 +60,7 @@
           "title": "스토리 분해(조직) 접근을 무엇으로 하시겠습니까? (§F 참조)",
           "owner": "Astra",
           "status": "answered",
-          "version": "79ea61e6c27e687332f6f263790245d9db1d3a8a9b3499c64fbd3e4f722146e4"
+          "version": "729b688bd2b95a8f821ffcbc229e3cd9cc570a50b44feb3d1b66f6be1c01706e"
         },
         {
           "id": "5e8b16ea-Q2",
@@ -114,7 +114,7 @@
           "title": "스토리/페르소나 문서(개발 산출물)의 서술 언어를 무엇으로 하시겠습니까? (사용자 대면 문구는 D-08에 따라 한국어 유지)",
           "owner": "Astra",
           "status": "answered",
-          "version": "55d88874aa5b7e653fb2175ba547c47501dd9eb49f9a5eaee139050710c18eb3"
+          "version": "af2673980289178b1d88eecacc6063d529559531d63cb92955f7d4b03da60889"
         },
         {
           "id": "011a4975-Q1",
@@ -1054,7 +1054,13 @@
       "occurred_at": "2026-09-08T09:34:10.863Z",
       "actor": "Astra",
       "summary": "스토리 계획 수정본 보존 · Astra 대조 지적 2건으로 승인 보류"
+    },
+    {
+      "sequence": 48,
+      "occurred_at": "2026-09-08T09:39:41.867Z",
+      "actor": "Astra",
+      "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · User Stories"
     }
   ],
-  "version": "f4853495375c2790e0fc8680e24b037c75777f9a6e369fb2d88337a48357e3f5"
+  "version": "ae8110eaffb0610506b06bf843a8acc72c408b5cd7fe50985ebf1d53f76e472e"
 }
