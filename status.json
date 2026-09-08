@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T07:57:21.036Z",
-  "last_sequence": 28,
+  "updated_at": "2026-09-08T08:05:01.236Z",
+  "last_sequence": 29,
   "state": {
-    "stage": "제품 입력 배치 완료 · AI-DLC 시작 전",
-    "status": "input_placed",
-    "summary": "requirements/mindcraft-product-input.md에 제품 r0.4를 배치했습니다. AI-DLC 시작 요청은 해당 파일을 참조합니다. 제품 내용과 외부 리뷰 자료의 경계는 유지했습니다.",
+    "stage": "Inception · Workspace Detection",
+    "status": "in_progress",
+    "summary": "제품 입력 파일을 기준으로 Claude/AI-DLC 작성과 DDT 독립 검토를 진행합니다. 일상 판단은 위임 범위에서 처리하고 Inception 이후 멈춥니다.",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -16,13 +16,13 @@
       "초기 입력 준비 계획 수립 · 제출·평가 정보 반영",
       "심사·투표·제출 종합 실행 계획 수립 및 하네스 정책 연결"
     ],
-    "in_progress": [],
-    "blockers": [
-      "AI-DLC 실행 전 자동 로드 지침·메모리 및 외부 하네스 배제 범위 확인 미실행"
+    "in_progress": [
+      "Inception 단계별 작성·검토·승인"
     ],
+    "blockers": [],
     "next_actions": [
-      "자동 로드 범위를 확인한 뒤 mindcraft에서 제품 요구사항 파일을 참조하여 AI-DLC 시작",
-      "AI-DLC 질문 해소 후 자체 요구사항의 F/AC/NQ 반영 대조"
+      "Workspace Detection 실행",
+      "요구사항 질문 해소 및 DDT 단계 검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -735,7 +735,13 @@
       "occurred_at": "2026-09-08T07:57:21.036Z",
       "actor": "Astra",
       "summary": "제품 r0.4를 mindcraft/requirements에 배치 완료"
+    },
+    {
+      "sequence": 29,
+      "occurred_at": "2026-09-08T08:05:01.236Z",
+      "actor": "Astra",
+      "summary": "위임 범위와 실제 설치 규칙을 확인하고 Inception 시작"
     }
   ],
-  "version": "5a76bc9f4066080900c817d304774a389d2830bcb466cf30757347548b67a8fc"
+  "version": "6e0c6a934236820c6e010ee124d9ce31699b82796550dd3a4cc3c13649ad2399"
 }
