@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T17:57:10.280Z",
-  "last_sequence": 129,
+  "updated_at": "2026-09-08T18:00:32.440Z",
+  "last_sequence": 130,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "DDT가 모드 전환·격리·셋업·추적 수정의 설계 정합성을 확인. 남은 두 본문 저장 지적을 확인했으며 기능 설계는 아직 미승인.",
+    "summary": "코드 작성 프로필의 승인·파일 범위·진행 체크 검사를 준비하고 로컬 검증 28건 통과. 실제 CLI 권한 검증과 제품 구현은 아직 미실행.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "DDT가 확인한 두 가지 본문 저장·직렬화 지적만 국소 수정한 뒤 최종 FD 검토를 받는다."
+      "FD 두 지적 수정과 재검토를 완료하고 승인된 코드 작성 프로필의 실제 권한 동작을 확인한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -69,7 +69,7 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T17:57:10.298Z",
+      "observed_at": "2026-09-08T18:00:32.469Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1908,7 +1908,13 @@
       "occurred_at": "2026-09-08T17:57:10.280Z",
       "actor": "Astra",
       "summary": "DDT가 모드 전환·격리·셋업·추적 수정의 설계 정합성을 확인. 남은 두 본문 저장 지적을 확인했으며 기능 설계는 아직 미승인."
+    },
+    {
+      "sequence": 130,
+      "occurred_at": "2026-09-08T18:00:32.440Z",
+      "actor": "Astra",
+      "summary": "코드 작성 프로필의 승인·파일 범위·진행 체크 검사를 준비하고 로컬 검증 28건 통과. 실제 CLI 권한 검증과 제품 구현은 아직 미실행."
     }
   ],
-  "version": "eab984a0f427995d7b87da4dbc38057a3bb3f8c7c6296e543391f3811c0c1c4d"
+  "version": "9dd44bfa5a4abb074a7d83bd5806d0f74336e7f56157ae716436f04220f5b96c"
 }
