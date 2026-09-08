@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T14:56:33.068Z",
-  "last_sequence": 90,
+  "updated_at": "2026-09-08T15:02:49.845Z",
+  "last_sequence": 91,
   "state": {
-    "stage": "INCEPTION · **Application Design",
+    "stage": "INCEPTION · **Units Generation",
     "status": "waiting_review",
-    "summary": "AP-APP-001 · application-design artifact DDT 검토 통과 및 Astra 위임 승인",
+    "summary": "산출물 검토 대기 · 질문 17개 · 미답변 0개",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "Application Design 승인 인계를 내부 문서에 기록하고 새 Claude 세션에서 Units Generation 계획을 작성한다. Construction은 시작하지 않는다."
+      "산출물 검토 결과를 대조하고 승인 또는 수정 요청을 별도로 기록"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -60,14 +60,14 @@
       "Operations": "자리표시자 · 참고 규칙 기준"
     },
     "aidlc_observation": {
-      "stage": "INCEPTION · **Application Design",
+      "stage": "INCEPTION · **Units Generation",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T14:56:33.077Z",
+      "observed_at": "2026-09-08T15:02:49.854Z",
       "waiting_on": "Astra · 검토",
-      "total": 11,
+      "total": 17,
       "history_total": 21,
-      "unresolved": 0,
+      "unresolved": 6,
       "unanswered": 0,
       "warnings": [],
       "questions": [
@@ -232,6 +232,60 @@
           "owner": "Astra",
           "status": "resolved",
           "version": "af2673980289178b1d88eecacc6063d529559531d63cb92955f7d4b03da60889"
+        },
+        {
+          "id": "3ce957c2-UG-01",
+          "label": "UG-01",
+          "active": true,
+          "title": "어떤 기준으로 17개 스토리를 Unit/모듈로 묶는가? (A) 각 Epic을 별도 Unit으로 분리 (B) 전 제품을 단일 Unit으로 두고 Epic/도메인을 논리 모듈로 그룹화 (C) 기술 계층별 분리 Unit (D) 기타.",
+          "owner": "담당 확인 필요",
+          "status": "answered",
+          "version": "8c0e5354eb8325d0c044498a9ce0d01d3e94c1c0e8e7d7d6e3aebecb3d129b61"
+        },
+        {
+          "id": "3ce957c2-UG-02",
+          "label": "UG-02",
+          "active": true,
+          "title": "Unit 간 통합 방식·공유 리소스·통신 패턴은 무엇인가?",
+          "owner": "담당 확인 필요",
+          "status": "answered",
+          "version": "081c62a1573edada8401f93bfab99f028f85d2b4f087a199f990be84da7910a3"
+        },
+        {
+          "id": "3ce957c2-UG-03",
+          "label": "UG-03",
+          "active": true,
+          "title": "팀 구조·소유권 경계·협업 모델을 Unit 경계에 정렬하는가?",
+          "owner": "담당 확인 필요",
+          "status": "answered",
+          "version": "2574d6803379fdbc94c04847fe41759b4efc158277d32e69facd8f5164809cbc"
+        },
+        {
+          "id": "3ce957c2-UG-04",
+          "label": "UG-04",
+          "active": true,
+          "title": "Unit별로 다른 scalability/deployment 요구가 있는가?",
+          "owner": "담당 확인 필요",
+          "status": "answered",
+          "version": "e028dd1ee72f54b3a2e86d89f41f4b76cc5cf4aef226a859426428dbdce2de04"
+        },
+        {
+          "id": "3ce957c2-UG-05",
+          "label": "UG-05",
+          "active": true,
+          "title": "비즈니스 도메인 경계/바운디드 컨텍스트를 Unit에 어떻게 반영하는가?",
+          "owner": "담당 확인 필요",
+          "status": "answered",
+          "version": "80fcd14986534d757d6d8ee5d90af9de7f781dbb05b7c8808f6e887581cd6d2b"
+        },
+        {
+          "id": "3ce957c2-UG-06",
+          "label": "UG-06",
+          "active": true,
+          "title": "(규칙상 Greenfield multi-unit 전용 질문) 배포 모델과 디렉터리 구조 선호는?",
+          "owner": "담당 확인 필요",
+          "status": "answered",
+          "version": "81062b5de9edaedc2eb537f68d38444814f85ae2274585874a2aa0a5ea29e604"
         },
         {
           "id": "011a4975-Q1",
@@ -1429,7 +1483,13 @@
       "occurred_at": "2026-09-08T14:56:33.068Z",
       "actor": "Astra",
       "summary": "AP-APP-001 · application-design artifact DDT 검토 통과 및 Astra 위임 승인"
+    },
+    {
+      "sequence": 91,
+      "occurred_at": "2026-09-08T15:02:49.845Z",
+      "actor": "Astra",
+      "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · **Units Generation"
     }
   ],
-  "version": "f7608438b082cdee21e7a8f1b99a9ab039110c635e98cc965b97f56fe60fa20c"
+  "version": "8f7fcdacc3934b43dcc61aa8d0e00fa82b3fd4cd579a818dc48d14300f654b89"
 }
