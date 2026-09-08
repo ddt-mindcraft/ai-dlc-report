@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T17:15:21.666Z",
-  "last_sequence": 123,
+  "updated_at": "2026-09-08T17:21:39.450Z",
+  "last_sequence": 124,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "집중 리뷰 후 Workspace 저장·새 승인 구분·명령 staging과 broker 경계·기술 근거 정정의 구현 결정을 기록했다. 제품 범위는 유지한다.",
+    "summary": "격리 제약 강화가 정상 모드변경을 막지 않도록 DDT 자문을 받았다. 논리 Episode 연속성과 모드별 물리 데이터 접근을 분리하는 보완 결정을 기록했다.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "확정한 국소 수정 결정으로 Claude가 FD 산출물을 정정하고 결과를 DDT에 다시 전달한다."
+      "실행 중인 FD 수정 결과를 보존한 뒤, 동일 Episode의 정상 모드변경도 유지하도록 물리모델을 대조한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -69,7 +69,7 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T17:15:21.696Z",
+      "observed_at": "2026-09-08T17:21:39.468Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1872,7 +1872,13 @@
       "occurred_at": "2026-09-08T17:15:21.666Z",
       "actor": "Astra",
       "summary": "집중 리뷰 후 Workspace 저장·새 승인 구분·명령 staging과 broker 경계·기술 근거 정정의 구현 결정을 기록했다. 제품 범위는 유지한다."
+    },
+    {
+      "sequence": 124,
+      "occurred_at": "2026-09-08T17:21:39.450Z",
+      "actor": "Astra",
+      "summary": "격리 제약 강화가 정상 모드변경을 막지 않도록 DDT 자문을 받았다. 논리 Episode 연속성과 모드별 물리 데이터 접근을 분리하는 보완 결정을 기록했다."
     }
   ],
-  "version": "e952db1f835373adbd53a7d2fbc40355788bac37729c368933e8774fc4114d62"
+  "version": "c416069178a90d73f3f394bb180fa8665bddc6752cbaebfb6275c684193ec7b9"
 }
