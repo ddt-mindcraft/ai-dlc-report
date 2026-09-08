@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T10:33:48.589Z",
-  "last_sequence": 57,
+  "updated_at": "2026-09-08T10:43:11.080Z",
+  "last_sequence": 58,
   "state": {
-    "stage": "INCEPTION · Workflow Planning — `execution-plan.md`",
-    "status": "waiting_review",
-    "summary": "AP-WORKFLOW-001 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
+    "stage": "INCEPTION · Application Design",
+    "status": "waiting_answers",
+    "summary": "답변 대기 · 질문 11개 · 미답변 10개",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "새 Claude 세션에서 실행계획 승인 반영 후 Application Design 계획·질문 작성, 실제 필수 산출물 목록 구체화"
+      "담당자가 미답변 질문을 확인하고 답변을 준비"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -48,17 +48,107 @@
       "Operations": "자리표시자 · 참고 규칙 기준"
     },
     "aidlc_observation": {
-      "stage": "INCEPTION · Workflow Planning — `execution-plan.md`",
-      "status": "waiting_review",
+      "stage": "INCEPTION · Application Design",
+      "status": "waiting_answers",
       "phase": "Inception",
-      "observed_at": "2026-09-08T10:33:48.594Z",
-      "waiting_on": "Astra · 검토",
-      "total": 1,
+      "observed_at": "2026-09-08T10:43:11.087Z",
+      "waiting_on": "Astra",
+      "total": 11,
       "history_total": 21,
-      "unresolved": 0,
-      "unanswered": 0,
+      "unresolved": 10,
+      "unanswered": 10,
       "warnings": [],
       "questions": [
+        {
+          "id": "ef027564-AD-01",
+          "label": "AD-01",
+          "active": true,
+          "title": "컴포넌트 조직/배포 경계를 어떻게 잡는가? (단일 로컬 제품 — 독립 배포 서비스 분할을 새 요구로 만들지 않음; Units 수는 이후 Units Generation에서 결정)",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "78ebfc395f4de85f287adf4e8b331ccb9bc4ea9e0ea867a7cec17134d6f86ba2"
+        },
+        {
+          "id": "ef027564-AD-02",
+          "label": "AD-02",
+          "active": true,
+          "title": "외부 폴더 접근·상태 변경(파일 쓰기/삭제/명령/네트워크)과 승인된 명령의 자식 프로세스에 대한 권한 강제 메커니즘을 어떻게 설계하는가? (단순 cwd/문자열 경로 검사만으로 강제된다고 단정하지 않음 — R-01)",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "95669851185fbc8a6eee82506f00fda6cb062b0395f06c9d97cf620998018d76"
+        },
+        {
+          "id": "ef027564-AD-03",
+          "label": "AD-03",
+          "active": true,
+          "title": "권한 중개/OS 격리를 대상 Windows 환경에서 확립·검증할 수 없을 때의 설계 계약(정지 게이트)은?",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "17efd965b0d8503220dd627f742986a61267130beed7f194d46428696224653f"
+        },
+        {
+          "id": "ef027564-AD-04",
+          "label": "AD-04",
+          "active": true,
+          "title": "앱 소유 이력 DB(SQLite) 의 배치 계약을 어떻게 두는가? (SQLite WAL이 네트워크 FS에서 동작하지 않을 수 있음 — R-02. 사용자 작업 자료 폴더 종류에는 임의 제한을 두지 않는 요구(§6.1/F-11) 를 침해하지 않을 것)",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "d9c23744396d1756cff97a69fdd5cf2af5d895791412685d090823da513d369c"
+        },
+        {
+          "id": "ef027564-AD-05",
+          "label": "AD-05",
+          "active": true,
+          "title": "본문 파일 publish 와 DB 트랜잭션 commit 의 정합성 계약(원자성이 자동으로 같지 않음 — R-03)을 어떤 순서/재정합 방식으로 두는가?",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "e0c09bceaa3c92b76f807eb35d1e4fefdd40b4c3bffa6715a9e3136e7ecab2ab"
+        },
+        {
+          "id": "ef027564-AD-06",
+          "label": "AD-06",
+          "active": true,
+          "title": "Pi SDK의 기본 셸·도구·자동 ResourceLoader·평문 auth·in-memory 세션을 어떤 경계 구조로 감싸는가? (세션 저장 경계 포함 — §7.1)",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "b10772e0b8e1cf9c8b0ab41000d9ad5fef67c4e62a6770cfeb424e5ca343ff40"
+        },
+        {
+          "id": "ef027564-AD-07",
+          "label": "AD-07",
+          "active": true,
+          "title": "모드 backend 격리(offline/demo/user namespace + 불변 Run backend)를 저장 계층에 어떻게 매핑하는가? (표시 태그만으로 대신하지 않음 — INV-04)",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "c6ca3ef8778d8dfc25ae27e589901dc826f7f43158c568047eeba1d4bab86a53"
+        },
+        {
+          "id": "ef027564-AD-08",
+          "label": "AD-08",
+          "active": true,
+          "title": "승인 게이트 기반 실행 흐름(검색 → 맥락 미리보기 → 모델 호출 → 도구 승인 → 실행 → 결과 확인)의 서비스 오케스트레이션 패턴은?",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "0ccad3b0a5a058cc9671e96bbc7f48fea5aea27dd86221eb6e865cad8564912b"
+        },
+        {
+          "id": "ef027564-AD-09",
+          "label": "AD-09",
+          "active": true,
+          "title": "검색 타임아웃(D-06, 60초 정책 확정) 과 콘텍스트 한도 분할(REQ-F11-3) 의 컴포넌트 소유·계약을 어떻게 나누는가? (새 검색 한도·제약을 추가하지 않으며 소유/부분 결과 노출 계약만 선택)",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "db1a71c24f2f8f8eeb52d05f977ac81062a9d85e730695ce0203f7fedfe313c9"
+        },
+        {
+          "id": "ef027564-AD-10",
+          "label": "AD-10",
+          "active": true,
+          "title": "Task/Episode/Run/Session/Knowledge의 식별·상태 모델링 방식은? (sameEpisode/newRun·결과 불확실 효과 포함 — 상태 종류·정책은 확정, 모델링 방식만 선택)",
+          "owner": "Astra",
+          "status": "generated",
+          "version": "6040d0fcf9131a50a2cd8f609fb3b7426badb72c3021a30ef2b14ab6f270cace"
+        },
         {
           "id": "0a0aa184-WP-01",
           "label": "WP-01",
@@ -1129,7 +1219,13 @@
       "occurred_at": "2026-09-08T10:33:48.589Z",
       "actor": "Astra",
       "summary": "AP-WORKFLOW-001 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인"
+    },
+    {
+      "sequence": 58,
+      "occurred_at": "2026-09-08T10:43:11.080Z",
+      "actor": "Astra",
+      "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · Application Design"
     }
   ],
-  "version": "fccca4eb0ca95b7566412f54841e344c9dcdf19bf9d0730e7a7864930c8c03a9"
+  "version": "f5be224e9ad76a5a3d05c8d43e3f93b6855df6b352eb1d3d86c98a406d7926ac"
 }
