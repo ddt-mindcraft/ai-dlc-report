@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T14:37:27.650Z",
-  "last_sequence": 86,
+  "updated_at": "2026-09-08T14:40:45.894Z",
+  "last_sequence": 87,
   "state": {
     "stage": "INCEPTION · **Application Design",
     "status": "waiting_review",
-    "summary": "Astra 집중 리뷰: 잔존 계약 경계의 수정 내용을 실제 파일에서 대조했고 DDT 독립 재검토를 준비했다.",
+    "summary": "DDT 재검토 지적을 Astra가 재판정했다. Run 생성 호출자 누락을 인정하고 단회 토큰·재검증 입력 계약의 한정 수정과 종료 조건을 정했다.",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "DDT가 현재 Application Design 6문서와 집중 리뷰 해소 근거를 독립 재검토한다."
+      "Astra가 확인한 세 계약 경계만 Claude가 좁게 정정한 뒤 실제 호출자와 실패 조건을 다시 대조한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -61,7 +61,7 @@
       "stage": "INCEPTION · **Application Design",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T14:37:27.660Z",
+      "observed_at": "2026-09-08T14:40:45.904Z",
       "waiting_on": "Astra · 검토",
       "total": 11,
       "history_total": 21,
@@ -1403,7 +1403,13 @@
       "occurred_at": "2026-09-08T14:37:27.650Z",
       "actor": "Astra",
       "summary": "Astra 집중 리뷰: 잔존 계약 경계의 수정 내용을 실제 파일에서 대조했고 DDT 독립 재검토를 준비했다."
+    },
+    {
+      "sequence": 87,
+      "occurred_at": "2026-09-08T14:40:45.894Z",
+      "actor": "Astra",
+      "summary": "DDT 재검토 지적을 Astra가 재판정했다. Run 생성 호출자 누락을 인정하고 단회 토큰·재검증 입력 계약의 한정 수정과 종료 조건을 정했다."
     }
   ],
-  "version": "9545e82ba35d0229057ecc71138d26eb7ee781cd0303571d097f5ffcb838ca39"
+  "version": "789480c1e678b72a322d2186e8507c0962cd9a754168cf7e52efbe3d21ea8944"
 }
