@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:55:41.777Z",
-  "last_sequence": 108,
+  "updated_at": "2026-09-08T15:59:50.821Z",
+  "last_sequence": 109,
   "state": {
     "stage": "INCEPTION · Complete",
     "status": "phase_completed",
-    "summary": "사용자 목표 변경: Inception 이후 정지 제한을 해제하고 AI-DLC 전체 및 제품 완성까지 진행한다. 승인된 제품 요구와 Inception 산출물은 유지한다.",
+    "summary": "AI-DLC 전체 완성으로 목표를 확장했고 Construction 입력·검증 기준을 준비했습니다. 기존 연동의 전송 범위 확장 승인을 기다립니다.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -15,10 +15,15 @@
       "Units Generation",
       "Inception 최종 문서 검토 및 위임 승인"
     ],
-    "in_progress": [],
-    "blockers": [],
+    "in_progress": [
+      "Functional Design 작성 지시 준비",
+      "85개 수용 기준 및 9개 검증 게이트의 증거 기준 정리"
+    ],
+    "blockers": [
+      "자동 승인 검토: 이전 외부 전송 승인이 Inception까지여서 Construction payload·destination 승인 필요."
+    ],
     "next_actions": [
-      "새 Claude 세션에서 UOW-MINDCRAFT Functional Design 계획을 작성하고 DDT 검토를 수행한다."
+      "기존 Bedrock·DDT·GitHub 연동 범위 확장 승인 후 준비된 Functional Design 계획 작성 호출을 실행합니다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -65,7 +70,7 @@
       "stage": "INCEPTION · Complete",
       "status": "phase_completed",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:55:41.786Z",
+      "observed_at": "2026-09-08T15:59:50.830Z",
       "waiting_on": "다음 단계 인계 확인",
       "total": 0,
       "history_total": 38,
@@ -1706,7 +1711,13 @@
       "occurred_at": "2026-09-08T15:55:41.777Z",
       "actor": "Astra",
       "summary": "사용자 목표 변경: Inception 이후 정지 제한을 해제하고 AI-DLC 전체 및 제품 완성까지 진행한다. 승인된 제품 요구와 Inception 산출물은 유지한다."
+    },
+    {
+      "sequence": 109,
+      "occurred_at": "2026-09-08T15:59:50.821Z",
+      "actor": "Astra",
+      "summary": "전체 AI-DLC 실행 준비: 17스토리·85수용기준·9검증게이트의 완료 증거 기준을 정리했다. Claude 작성 호출은 외부 전송 범위 확인에서 차단되어 아직 시작하지 않았다."
     }
   ],
-  "version": "4ace773424b4890dd4092b56e0537d5720fd1c8d1439f8f307f4db74a42c7c2e"
+  "version": "0f3c6997ec9a0d1fbfd4142d055da9dc2424dfacec4bc10baab73744f068aee6"
 }
