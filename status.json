@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T19:40:27.700Z",
-  "last_sequence": 150,
+  "updated_at": "2026-09-08T19:45:10.259Z",
+  "last_sequence": 151,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "npm Windows 래퍼 호출 실패를 보존하고 직접 Node 진입점의 버전을 확인했다.",
+    "summary": "실제 npm 설치·잠금 생성·직접 버전 일치를 확인하고 승인된 소스 경로를 준비했다.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "검증된 Node 직접 npm 진입점으로 CG002를 재시도한다. 첫 실패는 설치 미착수로 보존한다."
+      "실제 설치 영수증을 AI-DLC 상태에 반영하고 CG003~017 공통 타입·포트·직렬화 및 테스트 소스를 작성한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T19:40:27.723Z",
+      "observed_at": "2026-09-08T19:45:10.310Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2038,7 +2038,13 @@
       "occurred_at": "2026-09-08T19:40:27.700Z",
       "actor": "Astra",
       "summary": "npm Windows 래퍼 호출 실패를 보존하고 직접 Node 진입점의 버전을 확인했다."
+    },
+    {
+      "sequence": 151,
+      "occurred_at": "2026-09-08T19:45:10.259Z",
+      "actor": "Astra",
+      "summary": "실제 npm 설치·잠금 생성·직접 버전 일치를 확인하고 승인된 소스 경로를 준비했다."
     }
   ],
-  "version": "8b6b1e0348f6da07b8312645a12ccfd4a49cb7489d642378de3ab4914aa11c1b"
+  "version": "f1bf93552d78b9f3bf0d04f0426b6bd59c08eac0c66ef6d4840b2b65c1a498e2"
 }
