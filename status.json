@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:16:45.114Z",
-  "last_sequence": 95,
+  "updated_at": "2026-09-08T15:18:34.752Z",
+  "last_sequence": 96,
   "state": {
     "stage": "INCEPTION · **Units Generation",
     "status": "waiting_review",
-    "summary": "작업 단위 3문서를 제출했다. 17스토리 전수 매핑을 확인했으며 의존성 요약표의 두 셀은 원본 설계와 정렬이 필요하다.",
+    "summary": "Units 단계에도 집중 리뷰 절차를 적용했다. 원본 설계 의존성을 모듈 표로 요약할 때 생긴 누락·표기 오류를 좁게 정정한다.",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "DDT 통합 검토 결과와 Astra 의존행렬 대조를 합쳐 필요한 표 정정만 수행한다."
+      "Claude가 두 Units 문서의 의존성 셀과 집계 설명만 정정한 뒤 Astra·DDT가 재검토한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -65,7 +65,7 @@
       "stage": "INCEPTION · **Units Generation",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:16:45.127Z",
+      "observed_at": "2026-09-08T15:18:34.762Z",
       "waiting_on": "Astra · 검토",
       "total": 17,
       "history_total": 21,
@@ -1515,7 +1515,13 @@
       "occurred_at": "2026-09-08T15:16:45.114Z",
       "actor": "Astra",
       "summary": "작업 단위 3문서를 제출했다. 17스토리 전수 매핑을 확인했으며 의존성 요약표의 두 셀은 원본 설계와 정렬이 필요하다."
+    },
+    {
+      "sequence": 96,
+      "occurred_at": "2026-09-08T15:18:34.752Z",
+      "actor": "Astra",
+      "summary": "Units 단계에도 집중 리뷰 절차를 적용했다. 원본 설계 의존성을 모듈 표로 요약할 때 생긴 누락·표기 오류를 좁게 정정한다."
     }
   ],
-  "version": "9f9d384925321edb34de7fe0fc603b9a7e2ee09590d6fc33d42e8b229a9a4fdf"
+  "version": "e9454a15c99326e038ad18791518eef5c7a686eca7ee38c5df1a5a4e2ddb80a4"
 }
