@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:42:34.768Z",
-  "last_sequence": 104,
+  "updated_at": "2026-09-08T15:49:23.582Z",
+  "last_sequence": 105,
   "state": {
-    "stage": "INCEPTION · **Units Generation",
-    "status": "waiting_review",
-    "summary": "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인",
+    "stage": "INCEPTION · Complete",
+    "status": "needs_reconciliation",
+    "summary": "원본 확인 필요 · 질문 0개 · 미답변 0개",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "새 Claude 세션에서 승인된 Units와 Inception 종료를 상태·감사·현행 Units 계획의 상태 표기에만 반영하고 Construction 이전에서 정지한다."
+      "원본 형식과 리포트 상태를 확인하고 재관찰"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -59,26 +59,28 @@
       "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
-      "Inception": "진행 중",
+      "Inception": "확인 필요",
       "Construction": "미시작",
       "Operations": "자리표시자 · 참고 규칙 기준"
     },
     "aidlc_observation": {
-      "stage": "INCEPTION · **Units Generation",
-      "status": "waiting_review",
+      "stage": "INCEPTION · Complete",
+      "status": "needs_reconciliation",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:42:34.778Z",
-      "waiting_on": "Astra · 검토",
-      "total": 17,
-      "history_total": 21,
-      "unresolved": 1,
+      "observed_at": "2026-09-08T15:49:23.596Z",
+      "waiting_on": "Astra 원본 확인",
+      "total": 0,
+      "history_total": 38,
+      "unresolved": 0,
       "unanswered": 0,
-      "warnings": [],
+      "warnings": [
+        "단계 종료의 승인 근거와 현재 원본 버전이 일치하지 않습니다."
+      ],
       "questions": [
         {
           "id": "ef027564-AD-01",
-          "label": "AD-01",
-          "active": true,
+          "label": "이전 · AD-01",
+          "active": false,
           "title": "컴포넌트 조직/배포 경계를 어떻게 잡는가? (단일 로컬 제품 — 독립 배포 서비스 분할을 새 요구로 만들지 않음; Units 수는 이후 Units Generation에서 결정)",
           "owner": "Astra",
           "status": "resolved",
@@ -86,8 +88,8 @@
         },
         {
           "id": "ef027564-AD-02",
-          "label": "AD-02",
-          "active": true,
+          "label": "이전 · AD-02",
+          "active": false,
           "title": "외부 폴더 접근·상태 변경(파일 쓰기/삭제/명령/네트워크)과 승인된 명령의 자식 프로세스에 대한 권한 강제 메커니즘을 어떻게 설계하는가? (단순 cwd/문자열 경로 검사만으로 강제된다고 단정하지 않음 — R-01)",
           "owner": "Astra",
           "status": "resolved",
@@ -95,8 +97,8 @@
         },
         {
           "id": "ef027564-AD-03",
-          "label": "AD-03",
-          "active": true,
+          "label": "이전 · AD-03",
+          "active": false,
           "title": "권한 중개/OS 격리를 대상 Windows 환경에서 확립·검증할 수 없을 때의 설계 계약(정지 게이트)은?",
           "owner": "Astra",
           "status": "resolved",
@@ -104,8 +106,8 @@
         },
         {
           "id": "ef027564-AD-04",
-          "label": "AD-04",
-          "active": true,
+          "label": "이전 · AD-04",
+          "active": false,
           "title": "앱 소유 이력 DB(SQLite) 의 배치 계약을 어떻게 두는가? (SQLite WAL이 네트워크 FS에서 동작하지 않을 수 있음 — R-02. 사용자 작업 자료 폴더 종류에는 임의 제한을 두지 않는 요구(§6.1/F-11) 를 침해하지 않을 것)",
           "owner": "Astra",
           "status": "resolved",
@@ -113,8 +115,8 @@
         },
         {
           "id": "ef027564-AD-05",
-          "label": "AD-05",
-          "active": true,
+          "label": "이전 · AD-05",
+          "active": false,
           "title": "본문 파일 publish 와 DB 트랜잭션 commit 의 정합성 계약(원자성이 자동으로 같지 않음 — R-03)을 어떤 순서/재정합 방식으로 두는가?",
           "owner": "Astra",
           "status": "resolved",
@@ -122,8 +124,8 @@
         },
         {
           "id": "ef027564-AD-06",
-          "label": "AD-06",
-          "active": true,
+          "label": "이전 · AD-06",
+          "active": false,
           "title": "Pi SDK의 기본 셸·도구·자동 ResourceLoader·평문 auth·in-memory 세션을 어떤 경계 구조로 감싸는가? (세션 저장 경계 포함 — §7.1)",
           "owner": "Astra",
           "status": "resolved",
@@ -131,8 +133,8 @@
         },
         {
           "id": "ef027564-AD-07",
-          "label": "AD-07",
-          "active": true,
+          "label": "이전 · AD-07",
+          "active": false,
           "title": "모드 backend 격리(offline/demo/user namespace + 불변 Run backend)를 저장 계층에 어떻게 매핑하는가? (표시 태그만으로 대신하지 않음 — INV-04)",
           "owner": "Astra",
           "status": "resolved",
@@ -140,8 +142,8 @@
         },
         {
           "id": "ef027564-AD-08",
-          "label": "AD-08",
-          "active": true,
+          "label": "이전 · AD-08",
+          "active": false,
           "title": "승인 게이트 기반 실행 흐름(검색 → 맥락 미리보기 → 모델 호출 → 도구 승인 → 실행 → 결과 확인)의 서비스 오케스트레이션 패턴은?",
           "owner": "Astra",
           "status": "resolved",
@@ -149,8 +151,8 @@
         },
         {
           "id": "ef027564-AD-09",
-          "label": "AD-09",
-          "active": true,
+          "label": "이전 · AD-09",
+          "active": false,
           "title": "검색 타임아웃(D-06, 60초 정책 확정) 과 콘텍스트 한도 분할(REQ-F11-3) 의 컴포넌트 소유·계약을 어떻게 나누는가? (새 검색 한도·제약을 추가하지 않으며 소유/부분 결과 노출 계약만 선택)",
           "owner": "Astra",
           "status": "resolved",
@@ -158,8 +160,8 @@
         },
         {
           "id": "ef027564-AD-10",
-          "label": "AD-10",
-          "active": true,
+          "label": "이전 · AD-10",
+          "active": false,
           "title": "Task/Episode/Run/Session/Knowledge의 식별·상태 모델링 방식은? (sameEpisode/newRun·결과 불확실 효과 포함 — 상태 종류·정책은 확정, 모델링 방식만 선택)",
           "owner": "Astra",
           "status": "resolved",
@@ -167,8 +169,8 @@
         },
         {
           "id": "0a0aa184-WP-01",
-          "label": "WP-01",
-          "active": true,
+          "label": "이전 · WP-01",
+          "active": false,
           "title": "활성 규칙 충돌(§7.1)을 고려할 때 Construction의 별도 NFR Requirements/NFR Design 스테이지를 어떻게 처리하는가? (기존 확정 NFR 내용·수치는 변경하지 않으며 단계 배치 방식만 선택한다. 본 질문의 선택 결정과 실제 계획 승인은 별개다.)",
           "owner": "Astra",
           "status": "resolved",
@@ -239,8 +241,8 @@
         },
         {
           "id": "3ce957c2-UG-01",
-          "label": "UG-01",
-          "active": true,
+          "label": "이전 · UG-01",
+          "active": false,
           "title": "어떤 기준으로 17개 스토리를 Unit/모듈로 묶는가? (A) 각 Epic을 별도 Unit으로 분리 (B) 전 제품을 단일 Unit으로 두고 Epic/도메인을 논리 모듈로 그룹화 (C) 기술 계층별 분리 Unit (D) 기타.",
           "owner": "담당 확인 필요",
           "status": "resolved",
@@ -248,8 +250,8 @@
         },
         {
           "id": "3ce957c2-UG-02",
-          "label": "UG-02",
-          "active": true,
+          "label": "이전 · UG-02",
+          "active": false,
           "title": "Unit 간 통합 방식·공유 리소스·통신 패턴은 무엇인가?",
           "owner": "담당 확인 필요",
           "status": "resolved",
@@ -257,8 +259,8 @@
         },
         {
           "id": "3ce957c2-UG-03",
-          "label": "UG-03",
-          "active": true,
+          "label": "이전 · UG-03",
+          "active": false,
           "title": "팀 구조·소유권 경계·협업 모델을 Unit 경계에 정렬하는가?",
           "owner": "담당 확인 필요",
           "status": "resolved",
@@ -266,8 +268,8 @@
         },
         {
           "id": "3ce957c2-UG-04",
-          "label": "UG-04",
-          "active": true,
+          "label": "이전 · UG-04",
+          "active": false,
           "title": "Unit별로 다른 scalability/deployment 요구가 있는가?",
           "owner": "담당 확인 필요",
           "status": "resolved",
@@ -275,8 +277,8 @@
         },
         {
           "id": "3ce957c2-UG-05",
-          "label": "UG-05",
-          "active": true,
+          "label": "이전 · UG-05",
+          "active": false,
           "title": "비즈니스 도메인 경계/바운디드 컨텍스트를 Unit에 어떻게 반영하는가?",
           "owner": "담당 확인 필요",
           "status": "resolved",
@@ -284,12 +286,12 @@
         },
         {
           "id": "3ce957c2-UG-06",
-          "label": "UG-06",
-          "active": true,
+          "label": "이전 · UG-06",
+          "active": false,
           "title": "(규칙상 Greenfield multi-unit 전용 질문) 배포 모델과 디렉터리 구조 선호는?",
           "owner": "담당 확인 필요",
           "status": "answered",
-          "version": "3502f16cab5168212d1904b87f947e7eb8125b328736f0dc836625fcf857acf4"
+          "version": "28bfa25bc5e9a864a5b1cb36d4e91ed0d3c2de04f3a0ea08932c9a7afec4d97c"
         },
         {
           "id": "011a4975-Q1",
@@ -1571,7 +1573,13 @@
       "occurred_at": "2026-09-08T15:42:34.768Z",
       "actor": "Astra",
       "summary": "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인"
+    },
+    {
+      "sequence": 105,
+      "occurred_at": "2026-09-08T15:49:23.582Z",
+      "actor": "Astra",
+      "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · Complete"
     }
   ],
-  "version": "ae96b886e5319c2959b07461ce534c09b94ee8e3032d7c2768fb5a78f01736dc"
+  "version": "e911e049714d65ce910c87c3d16c1c0b6e2e022c789635f98a1df57cd22be54e"
 }
