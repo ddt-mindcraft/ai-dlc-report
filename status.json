@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T20:49:14.374Z",
-  "last_sequence": 158,
+  "updated_at": "2026-09-08T20:51:01.131Z",
+  "last_sequence": 159,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "Batch A 수정본 보존. 정적 타입 검사 통과, 원본 DTO 대조에서 미해소 항목 확인. 배치 승인 보류.",
+    "summary": "Astra 집중 재검토: 일부 지적 해소, DTO·권한 실행 포트 미해소 3건 확인. DDT 독립 검토로 진행.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "수정본의 남은 DTO·실행 포트 불일치를 집중 재검토하고 후속 작성 보류"
+      "DDT가 현재 Batch A 수정본과 미해소 계약을 독립 검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T20:49:14.390Z",
+      "observed_at": "2026-09-08T20:51:01.151Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2086,7 +2086,13 @@
       "occurred_at": "2026-09-08T20:49:14.374Z",
       "actor": "Astra",
       "summary": "Batch A 수정본 보존. 정적 타입 검사 통과, 원본 DTO 대조에서 미해소 항목 확인. 배치 승인 보류."
+    },
+    {
+      "sequence": 159,
+      "occurred_at": "2026-09-08T20:51:01.131Z",
+      "actor": "Astra",
+      "summary": "Astra 집중 재검토: 일부 지적 해소, DTO·권한 실행 포트 미해소 3건 확인. DDT 독립 검토로 진행."
     }
   ],
-  "version": "8d074938067aeac65e3b9138f913d5ff11ee51443a8aeb186e60afe8db7f3da0"
+  "version": "2e2179df8600d61291ef62d28a590aa144995d8d2aa2bf96434e76717efee6ac"
 }
