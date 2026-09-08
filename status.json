@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:24:40.533Z",
-  "last_sequence": 98,
+  "updated_at": "2026-09-08T15:28:38.518Z",
+  "last_sequence": 99,
   "state": {
     "stage": "INCEPTION · **Units Generation",
     "status": "waiting_review",
-    "summary": "Units 의존성 표 정정을 완료했다. Astra가 원본 컴포넌트 표와 모듈 표 전체를 대조해 불일치 0건을 확인했다.",
+    "summary": "Units 의존성 표는 검토 통과했다. Astra가 남은 과거 시점 문구와 조직 설명의 혼동을 직접 확인하고 한정 정정 조건을 기록했다.",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "DDT가 수정된 Units와 Inception 전체 문서를 최종 검토한 후 별도 단계·완료 승인을 기록한다."
+      "현재 상태 문구와 모듈 조직 설명을 한정 정정한 뒤 DDT 최종 검토를 받는다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -65,7 +65,7 @@
       "stage": "INCEPTION · **Units Generation",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:24:40.542Z",
+      "observed_at": "2026-09-08T15:28:38.528Z",
       "waiting_on": "Astra · 검토",
       "total": 17,
       "history_total": 21,
@@ -1533,7 +1533,13 @@
       "occurred_at": "2026-09-08T15:24:40.533Z",
       "actor": "Astra",
       "summary": "Units 의존성 표 정정을 완료했다. Astra가 원본 컴포넌트 표와 모듈 표 전체를 대조해 불일치 0건을 확인했다."
+    },
+    {
+      "sequence": 99,
+      "occurred_at": "2026-09-08T15:28:38.518Z",
+      "actor": "Astra",
+      "summary": "Units 의존성 표는 검토 통과했다. Astra가 남은 과거 시점 문구와 조직 설명의 혼동을 직접 확인하고 한정 정정 조건을 기록했다."
     }
   ],
-  "version": "ec7d8983ce077c946a374e9f325051ad02d0ac385d747aa86d3896ca29f05327"
+  "version": "d41311c6ec49f8380cb47a0395595fe7fac7474532b26608dabcafe653f9c6df"
 }
