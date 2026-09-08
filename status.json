@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T16:28:33.636Z",
-  "last_sequence": 113,
+  "updated_at": "2026-09-08T16:31:26.215Z",
+  "last_sequence": 114,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "Functional Design 계획 작성 완료. Astra가 기술 선택 이관 오류를 발견해 DDT 검토와 수정 대상으로 기록했다.",
+    "summary": "DDT가 기술 선택 시점 오류를 확인했다. 계획 진행표를 정정하고 새 기술 조사도 설계·검증 항목에 연결한다.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "Functional Design 계획의 기술 선택 시점 상충을 DDT 독립 검토로 대조한 뒤 수정한다."
+      "DDT F-FD-001~003을 반영해 FD 계획을 국소 수정하고 동일 기준으로 재검토한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -67,7 +67,7 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T16:28:33.646Z",
+      "observed_at": "2026-09-08T16:31:26.225Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1810,7 +1810,13 @@
       "occurred_at": "2026-09-08T16:28:33.636Z",
       "actor": "Astra",
       "summary": "Functional Design 계획 작성 완료. Astra가 기술 선택 이관 오류를 발견해 DDT 검토와 수정 대상으로 기록했다."
+    },
+    {
+      "sequence": 114,
+      "occurred_at": "2026-09-08T16:31:26.215Z",
+      "actor": "Astra",
+      "summary": "DDT가 기술 선택 시점 오류를 확인했다. 계획 진행표를 정정하고 새 기술 조사도 설계·검증 항목에 연결한다."
     }
   ],
-  "version": "ae14767692b89977ab6740c321ac1c8c292a55586fc7988754fc21f6486e9438"
+  "version": "85aa975f490394ac8ae4647158b2c436a81c6eff56465c0281bcb8ece5cce471"
 }
