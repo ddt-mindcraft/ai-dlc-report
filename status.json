@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:59:50.821Z",
-  "last_sequence": 109,
+  "updated_at": "2026-09-08T16:17:35.703Z",
+  "last_sequence": 110,
   "state": {
     "stage": "INCEPTION · Complete",
     "status": "phase_completed",
-    "summary": "AI-DLC 전체 완성으로 목표를 확장했고 Construction 입력·검증 기준을 준비했습니다. 기존 연동의 전송 범위 확장 승인을 기다립니다.",
+    "summary": "전체 범위 실행 승인을 반영했고 Functional Design 계획 작성을 재개합니다.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -16,14 +16,11 @@
       "Inception 최종 문서 검토 및 위임 승인"
     ],
     "in_progress": [
-      "Functional Design 작성 지시 준비",
-      "85개 수용 기준 및 9개 검증 게이트의 증거 기준 정리"
+      "Functional Design 계획 작성 재개 준비"
     ],
-    "blockers": [
-      "자동 승인 검토: 이전 외부 전송 승인이 Inception까지여서 Construction payload·destination 승인 필요."
-    ],
+    "blockers": [],
     "next_actions": [
-      "기존 Bedrock·DDT·GitHub 연동 범위 확장 승인 후 준비된 Functional Design 계획 작성 호출을 실행합니다."
+      "Claude 새 세션에서 Functional Design 계획 작성 후 DDT 독립 검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -70,7 +67,7 @@
       "stage": "INCEPTION · Complete",
       "status": "phase_completed",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:59:50.830Z",
+      "observed_at": "2026-09-08T16:17:35.714Z",
       "waiting_on": "다음 단계 인계 확인",
       "total": 0,
       "history_total": 38,
@@ -1717,7 +1714,13 @@
       "occurred_at": "2026-09-08T15:59:50.821Z",
       "actor": "Astra",
       "summary": "전체 AI-DLC 실행 준비: 17스토리·85수용기준·9검증게이트의 완료 증거 기준을 정리했다. Claude 작성 호출은 외부 전송 범위 확인에서 차단되어 아직 시작하지 않았다."
+    },
+    {
+      "sequence": 110,
+      "occurred_at": "2026-09-08T16:17:35.703Z",
+      "actor": "Astra",
+      "summary": "제품 완성까지 기존 작성·검토·저장·게시 연동의 범위 확장을 승인받았다. Functional Design 계획 작성을 재개한다."
     }
   ],
-  "version": "0f3c6997ec9a0d1fbfd4142d055da9dc2424dfacec4bc10baab73744f068aee6"
+  "version": "cb7610fc09d3c830404987349b4ed05b27636e26f1118850f60c07682d8a7c3a"
 }
