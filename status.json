@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T09:23:37.340Z",
-  "last_sequence": 46,
+  "updated_at": "2026-09-08T09:34:10.863Z",
+  "last_sequence": 47,
   "state": {
     "stage": "INCEPTION · User Stories",
     "status": "waiting_review",
-    "summary": "DDT 스토리 계획 검토 수신 · 적용 조건과 검증 상태 분리 보완",
+    "summary": "스토리 계획 수정본 보존 · Astra 대조 지적 2건으로 승인 보류",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "Claude가 스토리 계획 7개 답변 및 DDT 지적 2건 반영 후 재검토"
+      "Claude가 승인 이력 저장과 모드 격리 예시 오류를 국소 수정한 뒤 DDT 재검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -45,16 +45,81 @@
       "stage": "INCEPTION · User Stories",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T09:23:37.342Z",
+      "observed_at": "2026-09-08T09:34:10.869Z",
       "waiting_on": "Astra · 검토",
-      "total": 14,
-      "unresolved": 14,
+      "total": 7,
+      "history_total": 14,
+      "unresolved": 7,
       "unanswered": 0,
       "warnings": [],
       "questions": [
         {
-          "id": "011a4975-Q1",
+          "id": "5e8b16ea-Q1",
           "label": "Q1",
+          "active": true,
+          "title": "스토리 분해(조직) 접근을 무엇으로 하시겠습니까? (§F 참조)",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "79ea61e6c27e687332f6f263790245d9db1d3a8a9b3499c64fbd3e4f722146e4"
+        },
+        {
+          "id": "5e8b16ea-Q2",
+          "label": "Q2",
+          "active": true,
+          "title": "주 페르소나(비개발자·AI 초심자, 고정·강조) 외에 포함할 보조 페르소나 범위는 어떻게 하시겠습니까?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "cd7336618e6d3b0f84fa45fc27318528ea3a8a4e93c3e756d73262093f213e4f"
+        },
+        {
+          "id": "5e8b16ea-Q3",
+          "label": "Q3",
+          "active": true,
+          "title": "스토리 서술 형식(템플릿)을 무엇으로 하시겠습니까?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "ac2e5ba92d216fd48f6e35f37b9562519c1d43a2921d029cdb4af5dc5aad4627"
+        },
+        {
+          "id": "5e8b16ea-Q4",
+          "label": "Q4",
+          "active": true,
+          "title": "수용 기준(AC) 형식을 무엇으로 하시겠습니까? (§C 6개 축을 담을 형식)",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "ecd982aa69c4ca5fe5646f960197ae48156b7268617af27323d09dd4b314688c"
+        },
+        {
+          "id": "5e8b16ea-Q5",
+          "label": "Q5",
+          "active": true,
+          "title": "요구↔스토리↔AC↔시나리오 축 추적성 표현 방식을 무엇으로 하시겠습니까?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "4d602a4be9e2375d85d14c541c272bdafdfd618980177f1cba9928efcc10635d"
+        },
+        {
+          "id": "5e8b16ea-Q6",
+          "label": "Q6",
+          "active": true,
+          "title": "스토리 세분화 수준(granularity)을 무엇으로 하시겠습니까?",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "b7b72dc6806f1eff6187cbcf6dfb64938c989c1ae3658c54447de222763be23b"
+        },
+        {
+          "id": "5e8b16ea-Q7",
+          "label": "Q7",
+          "active": true,
+          "title": "스토리/페르소나 문서(개발 산출물)의 서술 언어를 무엇으로 하시겠습니까? (사용자 대면 문구는 D-08에 따라 한국어 유지)",
+          "owner": "Astra",
+          "status": "answered",
+          "version": "55d88874aa5b7e653fb2175ba547c47501dd9eb49f9a5eaee139050710c18eb3"
+        },
+        {
+          "id": "011a4975-Q1",
+          "label": "이전 · Q1",
+          "active": false,
           "title": "결과를 확인하지 못한 동작(예: 저장 직후 종료로 완료 기록이 없는 경우)의 확인 화면 기본 선택지 구성을 어떻게 할까요? (F-07, 6절 설계 결정 사항)",
           "owner": "Astra",
           "status": "submitted",
@@ -62,7 +127,8 @@
         },
         {
           "id": "011a4975-Q2",
-          "label": "Q2",
+          "label": "이전 · Q2",
+          "active": false,
           "title": "자격증명 보호 저장 방식의 우선순위를 어떻게 정할까요? (F-13, \"구체적인 방식은 설계에서 정한다\")",
           "owner": "Astra",
           "status": "submitted",
@@ -70,7 +136,8 @@
         },
         {
           "id": "011a4975-Q3",
-          "label": "Q3",
+          "label": "이전 · Q3",
+          "active": false,
           "title": "Task·Episode·Run·Session·Knowledge·권한 결정 등 영속 이력의 저장 메커니즘을 무엇으로 할까요? (F-08, 4절 \"저장 형식은 설계에서 정한다\")",
           "owner": "Astra",
           "status": "submitted",
@@ -78,7 +145,8 @@
         },
         {
           "id": "011a4975-Q4",
-          "label": "Q4",
+          "label": "이전 · Q4",
+          "active": false,
           "title": "Pi 기반에서 초기(v1)에 지원할 모델 연결 방식 목록의 범위를 어떻게 할까요? (6절 설계 결정 사항 — \"일반 사용자 모델을 Airouter로 제한하지 않는다\")",
           "owner": "Astra",
           "status": "submitted",
@@ -86,7 +154,8 @@
         },
         {
           "id": "011a4975-Q5",
-          "label": "Q5",
+          "label": "이전 · Q5",
+          "active": false,
           "title": "오프라인 샘플 / Airouter 테스트·데모 / 실사용 모델 실행을 구분하는 경계를 어떻게 둘까요? (6절 설계 결정 사항 — 검증용 샘플이 실제 호출로 자동 전환되지 않아야 함)",
           "owner": "Astra",
           "status": "submitted",
@@ -94,7 +163,8 @@
         },
         {
           "id": "011a4975-Q6",
-          "label": "Q6",
+          "label": "이전 · Q6",
+          "active": false,
           "title": "관련 자료 검색의 시간 제한 기본값을 얼마로 확정할까요? (F-11, 5절 — 초기값 후보 60초, 변경 가능)",
           "owner": "Astra",
           "status": "submitted",
@@ -102,7 +172,8 @@
         },
         {
           "id": "011a4975-Q7",
-          "label": "Q7",
+          "label": "이전 · Q7",
+          "active": false,
           "title": "Windows CLI/TUI의 기본 상호작용 방식을 어떻게 할까요? (F-15 사용성 설계 — 비개발자 친화)",
           "owner": "Astra",
           "status": "submitted",
@@ -110,7 +181,8 @@
         },
         {
           "id": "011a4975-Q8",
-          "label": "Q8",
+          "label": "이전 · Q8",
+          "active": false,
           "title": "사용자 대면 언어 범위를 어떻게 할까요? (F-01/F-15 — \"쉬운 한국어\")",
           "owner": "Astra",
           "status": "submitted",
@@ -118,7 +190,8 @@
         },
         {
           "id": "011a4975-Q9",
-          "label": "Q9",
+          "label": "이전 · Q9",
+          "active": false,
           "title": "설정·이력 등 앱 데이터의 기본 저장 위치를 어디로 할까요? (F-01 — 작업 폴더/일반 설정/보호된 자격증명 저장 위치를 구분)",
           "owner": "Astra",
           "status": "submitted",
@@ -126,7 +199,8 @@
         },
         {
           "id": "011a4975-EXT-1",
-          "label": "EXT-1",
+          "label": "이전 · EXT-1",
+          "active": false,
           "title": "Should security extension rules be enforced for this project?",
           "owner": "Astra",
           "status": "submitted",
@@ -134,7 +208,8 @@
         },
         {
           "id": "011a4975-EXT-2",
-          "label": "EXT-2",
+          "label": "이전 · EXT-2",
+          "active": false,
           "title": "Should the resiliency baseline be applied to this project?",
           "owner": "Astra",
           "status": "submitted",
@@ -142,7 +217,8 @@
         },
         {
           "id": "011a4975-EXT-2a",
-          "label": "EXT-2a",
+          "label": "이전 · EXT-2a",
+          "active": false,
           "title": "What are your RTO and RPO goals?",
           "owner": "Astra",
           "status": "submitted",
@@ -150,7 +226,8 @@
         },
         {
           "id": "011a4975-EXT-2b",
-          "label": "EXT-2b",
+          "label": "이전 · EXT-2b",
+          "active": false,
           "title": "운영 프로세스(변경관리·CI/CD·인시던트 대응) 처리 방식은?",
           "owner": "Astra",
           "status": "submitted",
@@ -158,7 +235,8 @@
         },
         {
           "id": "011a4975-EXT-3",
-          "label": "EXT-3",
+          "label": "이전 · EXT-3",
+          "active": false,
           "title": "Should property-based testing (PBT) rules be enforced for this project?",
           "owner": "Astra",
           "status": "submitted",
@@ -970,7 +1048,13 @@
       "occurred_at": "2026-09-08T09:23:37.340Z",
       "actor": "Astra",
       "summary": "DDT 스토리 계획 검토 수신 · 적용 조건과 검증 상태 분리 보완"
+    },
+    {
+      "sequence": 47,
+      "occurred_at": "2026-09-08T09:34:10.863Z",
+      "actor": "Astra",
+      "summary": "스토리 계획 수정본 보존 · Astra 대조 지적 2건으로 승인 보류"
     }
   ],
-  "version": "b4d2c0a15d96347bed15ee376286139647ca79ce3f5685818496a1ecbd79adff"
+  "version": "f4853495375c2790e0fc8680e24b037c75777f9a6e369fb2d88337a48357e3f5"
 }
