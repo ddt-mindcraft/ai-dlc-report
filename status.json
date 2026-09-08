@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T08:38:09.801Z",
-  "last_sequence": 36,
+  "updated_at": "2026-09-08T08:39:12.099Z",
+  "last_sequence": 37,
   "state": {
     "stage": "INCEPTION · Requirements Analysis",
     "status": "waiting_review",
@@ -42,7 +42,7 @@
       "stage": "INCEPTION · Requirements Analysis",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T08:38:09.803Z",
+      "observed_at": "2026-09-08T08:39:12.101Z",
       "waiting_on": "Astra · 검토",
       "total": 14,
       "unresolved": 14,
@@ -907,7 +907,13 @@
       "occurred_at": "2026-09-08T08:38:09.801Z",
       "actor": "Astra",
       "summary": "AI-DLC 원본 관찰·질문 버전 상태·핵심 현황 우선 배치·자동 갱신 구현"
+    },
+    {
+      "sequence": 37,
+      "occurred_at": "2026-09-08T08:39:12.099Z",
+      "actor": "Astra",
+      "summary": "MindCraft B안 대표 이미지 2장과 상세 소개 웹페이지 작성"
     }
   ],
-  "version": "73ad7cfafbbc83b990d839f4fb6c6b065d178cf44ac8a50622723ada856db26c"
+  "version": "7b587f2e7fc90379019991763b333321f743df88b9044ced7b7091b3e2067f86"
 }
