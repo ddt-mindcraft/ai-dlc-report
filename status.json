@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T16:38:40.721Z",
-  "last_sequence": 115,
+  "updated_at": "2026-09-08T16:40:09.607Z",
+  "last_sequence": 116,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "산출물 검토 대기 · 질문 25개 · 미답변 0개",
+    "summary": "FD 계획의 기술·스키마 선택 시점을 정정하고 7개 기술 결정 작업과 실증 게이트를 연결했다. 재검토 대기.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "산출물 검토 결과를 대조하고 승인 또는 수정 요청을 별도로 기록"
+      "수정된 FD 계획에 대해 F-FD-001~003 해소와 새 회귀를 DDT 재검토한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -67,7 +67,7 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T16:38:40.729Z",
+      "observed_at": "2026-09-08T16:40:09.617Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1822,7 +1822,13 @@
       "occurred_at": "2026-09-08T16:38:40.721Z",
       "actor": "Astra",
       "summary": "AI-DLC 원본 변경 관찰 · CONSTRUCTION · Functional Design"
+    },
+    {
+      "sequence": 116,
+      "occurred_at": "2026-09-08T16:40:09.607Z",
+      "actor": "Astra",
+      "summary": "FD 계획의 기술·스키마 선택 시점을 정정하고 7개 기술 결정 작업과 실증 게이트를 연결했다. 재검토 대기."
     }
   ],
-  "version": "970193ff82103b648b048c933b5b2e9c215f81abca74594ab9779179c84d3e24"
+  "version": "a5ce27432b355a3c09a615259acecb74d38c1e6dc5a9d025458eec90f3705ce3"
 }
