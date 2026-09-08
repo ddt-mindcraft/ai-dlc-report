@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T20:48:15.138Z",
-  "last_sequence": 157,
+  "updated_at": "2026-09-08T20:49:14.374Z",
+  "last_sequence": 158,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "산출물 검토 대기 · 질문 25개 · 미답변 0개",
+    "summary": "Batch A 수정본 보존. 정적 타입 검사 통과, 원본 DTO 대조에서 미해소 항목 확인. 배치 승인 보류.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "산출물 검토 결과를 대조하고 승인 또는 수정 요청을 별도로 기록"
+      "수정본의 남은 DTO·실행 포트 불일치를 집중 재검토하고 후속 작성 보류"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T20:48:15.156Z",
+      "observed_at": "2026-09-08T20:49:14.390Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2080,7 +2080,13 @@
       "occurred_at": "2026-09-08T20:48:15.138Z",
       "actor": "Astra",
       "summary": "AI-DLC 원본 변경 관찰 · CONSTRUCTION · Code Generation"
+    },
+    {
+      "sequence": 158,
+      "occurred_at": "2026-09-08T20:49:14.374Z",
+      "actor": "Astra",
+      "summary": "Batch A 수정본 보존. 정적 타입 검사 통과, 원본 DTO 대조에서 미해소 항목 확인. 배치 승인 보류."
     }
   ],
-  "version": "32149d5383d607553db734ade966a02b73f07036e3d8338c3d5807fbdc058633"
+  "version": "8d074938067aeac65e3b9138f913d5ff11ee51443a8aeb186e60afe8db7f3da0"
 }
