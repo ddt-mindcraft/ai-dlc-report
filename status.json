@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T09:39:41.867Z",
-  "last_sequence": 48,
+  "updated_at": "2026-09-08T09:42:01.203Z",
+  "last_sequence": 49,
   "state": {
     "stage": "INCEPTION · User Stories",
     "status": "waiting_review",
-    "summary": "산출물 검토 대기 · 질문 7개 · 미답변 0개",
+    "summary": "AP-STORY-PLAN-001 · user-stories plan DDT 검토 통과 및 Astra 위임 승인",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "산출물 검토 결과를 대조하고 승인 또는 수정 요청을 별도로 기록"
+      "새 Claude 세션에서 계획 위임 승인 반영 및 stories/personas 전체 생성 후 검토 대기"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -31,10 +31,12 @@
       "최초 요구 입력 구성 · 제품 사양 목차·템플릿·반영 절차 검토",
       "SUBMISSION-REVIEW-001 · 제출·평가·투표 준비 정적 검토; DDT/자동 검사 미실행",
       "SUBMISSION-FORM-002 · 사용자 스크린샷의 제출 양식 제약 확인; 실제 입력 미실행",
-      "DDT-REQ-REVIEW-002 · approve · 차단 지적 0"
+      "DDT-REQ-REVIEW-002 · approve · 차단 지적 0",
+      "DDT-STORY-PLAN-003 · approve"
     ],
     "approvals": [
-      "AP-REQ-001 · Requirements r1.1 · Astra 위임 승인"
+      "AP-REQ-001 · Requirements r1.1 · Astra 위임 승인",
+      "AP-STORY-PLAN-001 · user-stories plan DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
       "Inception": "진행 중",
@@ -45,11 +47,11 @@
       "stage": "INCEPTION · User Stories",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T09:39:41.871Z",
+      "observed_at": "2026-09-08T09:42:01.206Z",
       "waiting_on": "Astra · 검토",
       "total": 7,
       "history_total": 14,
-      "unresolved": 7,
+      "unresolved": 0,
       "unanswered": 0,
       "warnings": [],
       "questions": [
@@ -59,7 +61,7 @@
           "active": true,
           "title": "스토리 분해(조직) 접근을 무엇으로 하시겠습니까? (§F 참조)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "729b688bd2b95a8f821ffcbc229e3cd9cc570a50b44feb3d1b66f6be1c01706e"
         },
         {
@@ -68,7 +70,7 @@
           "active": true,
           "title": "주 페르소나(비개발자·AI 초심자, 고정·강조) 외에 포함할 보조 페르소나 범위는 어떻게 하시겠습니까?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "cd7336618e6d3b0f84fa45fc27318528ea3a8a4e93c3e756d73262093f213e4f"
         },
         {
@@ -77,7 +79,7 @@
           "active": true,
           "title": "스토리 서술 형식(템플릿)을 무엇으로 하시겠습니까?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "ac2e5ba92d216fd48f6e35f37b9562519c1d43a2921d029cdb4af5dc5aad4627"
         },
         {
@@ -86,7 +88,7 @@
           "active": true,
           "title": "수용 기준(AC) 형식을 무엇으로 하시겠습니까? (§C 6개 축을 담을 형식)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "ecd982aa69c4ca5fe5646f960197ae48156b7268617af27323d09dd4b314688c"
         },
         {
@@ -95,7 +97,7 @@
           "active": true,
           "title": "요구↔스토리↔AC↔시나리오 축 추적성 표현 방식을 무엇으로 하시겠습니까?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "4d602a4be9e2375d85d14c541c272bdafdfd618980177f1cba9928efcc10635d"
         },
         {
@@ -104,7 +106,7 @@
           "active": true,
           "title": "스토리 세분화 수준(granularity)을 무엇으로 하시겠습니까?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "b7b72dc6806f1eff6187cbcf6dfb64938c989c1ae3658c54447de222763be23b"
         },
         {
@@ -113,7 +115,7 @@
           "active": true,
           "title": "스토리/페르소나 문서(개발 산출물)의 서술 언어를 무엇으로 하시겠습니까? (사용자 대면 문구는 D-08에 따라 한국어 유지)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "af2673980289178b1d88eecacc6063d529559531d63cb92955f7d4b03da60889"
         },
         {
@@ -1060,7 +1062,13 @@
       "occurred_at": "2026-09-08T09:39:41.867Z",
       "actor": "Astra",
       "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · User Stories"
+    },
+    {
+      "sequence": 49,
+      "occurred_at": "2026-09-08T09:42:01.203Z",
+      "actor": "Astra",
+      "summary": "AP-STORY-PLAN-001 · user-stories plan DDT 검토 통과 및 Astra 위임 승인"
     }
   ],
-  "version": "ae8110eaffb0610506b06bf843a8acc72c408b5cd7fe50985ebf1d53f76e472e"
+  "version": "54de69500cc8e4daa818cd7d5f05b1c692f03172f95bc18960126857d3fca341"
 }
