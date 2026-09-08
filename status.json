@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T20:30:19.186Z",
-  "last_sequence": 155,
+  "updated_at": "2026-09-08T20:32:26.139Z",
+  "last_sequence": 156,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "Astra 집중 리뷰: 공통 DTO 계약 이탈과 자기참조 상태 테스트 발견. Batch B 진입 보류.",
+    "summary": "Astra 집중 리뷰 완료: 공통 계약 9건 수정 범위와 종료 기준 확정. 요구 변경 없이 Batch A 한정 보완.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "공통 DTO 및 소비 포트 보완 범위 확정 후 Batch A 한정 수정"
+      "Astra 집중 리뷰 9건을 Batch A에서 한정 수정한 뒤 직접 대조 및 DDT 재검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T20:30:19.205Z",
+      "observed_at": "2026-09-08T20:32:26.185Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2068,7 +2068,13 @@
       "occurred_at": "2026-09-08T20:30:19.186Z",
       "actor": "Astra",
       "summary": "Astra 집중 리뷰: 공통 DTO 계약 이탈과 자기참조 상태 테스트 발견. Batch B 진입 보류."
+    },
+    {
+      "sequence": 156,
+      "occurred_at": "2026-09-08T20:32:26.139Z",
+      "actor": "Astra",
+      "summary": "Astra 집중 리뷰 완료: 공통 계약 9건 수정 범위와 종료 기준 확정. 요구 변경 없이 Batch A 한정 보완."
     }
   ],
-  "version": "2edb23935a60181985d8bfaa57fd457964e1495f083117867ff8b09a00c993bf"
+  "version": "f8aca5879dbb13bce2204324128f36e1fdfe4518e24ee21447c18a1e44ec1782"
 }
