@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T08:22:36.638Z",
-  "last_sequence": 34,
+  "updated_at": "2026-09-08T08:24:05.790Z",
+  "last_sequence": 35,
   "state": {
     "stage": "Inception · requirements-analysis",
     "status": "in_progress",
@@ -770,7 +770,13 @@
       "occurred_at": "2026-09-08T08:22:36.638Z",
       "actor": "Astra",
       "summary": "DDT 질문 12개 답변 대조 · 일반 설계 선택 채택"
+    },
+    {
+      "sequence": 35,
+      "occurred_at": "2026-09-08T08:24:05.790Z",
+      "actor": "Astra",
+      "summary": "질문 대기·사이클 상태·과거 리뷰 표시 불일치 개선 검토: 6개 항목과 인수 기준 정리"
     }
   ],
-  "version": "6db25e84ea100df93c070e71a9ed11ec15b576ff4952db4e39ef90183fe78203"
+  "version": "3cf918b0a0092e31a9006d7a13ac07027b5131e044f967fe348c3f1ec641b261"
 }
