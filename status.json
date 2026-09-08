@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:05:31.926Z",
-  "last_sequence": 93,
+  "updated_at": "2026-09-08T15:15:10.618Z",
+  "last_sequence": 94,
   "state": {
     "stage": "INCEPTION · **Units Generation",
     "status": "waiting_review",
-    "summary": "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인",
+    "summary": "산출물 검토 대기 · 질문 17개 · 미답변 0개",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "새 Claude 세션에서 승인된 계획대로 작업 단위 3문서를 작성하고 산출물 검토 게이트에서 멈춘다."
+      "산출물 검토 결과를 대조하고 승인 또는 수정 요청을 별도로 기록"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -65,11 +65,11 @@
       "stage": "INCEPTION · **Units Generation",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:05:31.935Z",
+      "observed_at": "2026-09-08T15:15:10.627Z",
       "waiting_on": "Astra · 검토",
       "total": 17,
       "history_total": 21,
-      "unresolved": 0,
+      "unresolved": 1,
       "unanswered": 0,
       "warnings": [],
       "questions": [
@@ -286,8 +286,8 @@
           "active": true,
           "title": "(규칙상 Greenfield multi-unit 전용 질문) 배포 모델과 디렉터리 구조 선호는?",
           "owner": "담당 확인 필요",
-          "status": "resolved",
-          "version": "81062b5de9edaedc2eb537f68d38444814f85ae2274585874a2aa0a5ea29e604"
+          "status": "answered",
+          "version": "e763d3956c72bef3c6cf1d0156d21cc010eccc2bc7e2fc1b24b640529c88e66d"
         },
         {
           "id": "011a4975-Q1",
@@ -1503,7 +1503,13 @@
       "occurred_at": "2026-09-08T15:05:31.926Z",
       "actor": "Astra",
       "summary": "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인"
+    },
+    {
+      "sequence": 94,
+      "occurred_at": "2026-09-08T15:15:10.618Z",
+      "actor": "Astra",
+      "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · **Units Generation"
     }
   ],
-  "version": "fa60f23d2208460aafef39b46e515de3e2819c70194a667591d2dfeb88ee63cb"
+  "version": "9c3378533f173d466409c215d1c48e68225ff1c2dd57a3b7ba62153e0881c993"
 }
