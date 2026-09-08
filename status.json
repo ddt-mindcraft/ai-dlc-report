@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T16:40:09.607Z",
-  "last_sequence": 116,
+  "updated_at": "2026-09-08T16:42:12.198Z",
+  "last_sequence": 117,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "FD 계획의 기술·스키마 선택 시점을 정정하고 7개 기술 결정 작업과 실증 게이트를 연결했다. 재검토 대기.",
+    "summary": "AP-FD-PLAN-001 · functional-design plan DDT 검토 통과 및 Astra 위임 승인",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "수정된 FD 계획에 대해 F-FD-001~003 해소와 새 회귀를 DDT 재검토한다."
+      "승인된 FD 계획의 4개 상세 산출물을 작성하고 기술·스키마를 근거와 함께 확정한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -41,7 +41,8 @@
       "DDT-PLAN-STATUS-001 · approve",
       "DDT-APP-ARTIFACT-003 · approve",
       "DDT-UNITS-PLAN-001 · approve",
-      "DDT-INCEPTION-FINAL-005 · approve"
+      "DDT-INCEPTION-FINAL-005 · approve",
+      "DDT-FD-PLAN-002 · approve"
     ],
     "approvals": [
       "AP-REQ-001 · Requirements r1.1 · Astra 위임 승인",
@@ -56,7 +57,8 @@
       "AP-APP-001 · application-design artifact DDT 검토 통과 및 Astra 위임 승인",
       "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인",
-      "AP-INCEPTION-001 · Inception 완료 승인"
+      "AP-INCEPTION-001 · Inception 완료 승인",
+      "AP-FD-PLAN-001 · functional-design plan DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
       "Inception": "완료",
@@ -67,11 +69,11 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T16:40:09.617Z",
+      "observed_at": "2026-09-08T16:42:12.208Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
-      "unresolved": 9,
+      "unresolved": 1,
       "unanswered": 0,
       "warnings": [],
       "questions": [
@@ -81,7 +83,7 @@
           "active": true,
           "title": "FD에서 도메인 엔터티의 물리 스키마(SQLite 컬럼·타입·인덱스)·직렬화 포맷을 어느 수준까지 확정하는가?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "b64dfa524c11965dcb5ab3fd8c1bbc7260272d04d8ba848b04691aa8eb7da980"
         },
         {
@@ -90,7 +92,7 @@
           "active": true,
           "title": "비개발자 Windows CLI/TUI의 화면·상호작용을 FD에서 어떻게 다루는가?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "c7ceb499d9f641bb1d3037928998c3c51bda8f38a2688b4339618524f2c3f254"
         },
         {
@@ -99,7 +101,7 @@
           "active": true,
           "title": "`business-rules.md`의 규칙 표기 형식은?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "bf60c24cc89f8807e26a0857afae90d369903e89d556b8d3b4f75629ffe04590"
         },
         {
@@ -108,7 +110,7 @@
           "active": true,
           "title": "17스토리 × 6축 AC 추적을 어디에 배치하는가?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "58bcae012c98c281a26406442fdd0395a8a4cf567fabee98824dae012538d804"
         },
         {
@@ -117,7 +119,7 @@
           "active": true,
           "title": "PBT(Property-Based Testing) 대상을 FD에서 어떻게 다루는가(PBT Partial: PBT-02/03/07/08/09 blocking)?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "7e324b753ca7af576ca6e21d1d4c3e56828605a8902f610ecbaeda1bbb86cdfe"
         },
         {
@@ -126,7 +128,7 @@
           "active": true,
           "title": "오류 카탈로그(ErrorKind → 한국어 사용자 안내) 매핑은?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "e3ccf3608bd84fc01029751a93caf04c6abd40a643d48bac1f414ebf5b01c416"
         },
         {
@@ -135,7 +137,7 @@
           "active": true,
           "title": "재개/복원 3상황(SDK 메모리 손실·비정상 종료 재시작·명시 재개) 의 상세 로직을 어디에 두는가?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "34dbf33443741fdb8317479014c85950600fcf83f585d1d9d30b34ab98bb8245"
         },
         {
@@ -144,7 +146,7 @@
           "active": true,
           "title": "최종 물리 언어·Pi SDK 버전·EXE 패키징 도구를 이번 FD에서 확정하는가?",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "a9bcbb049bf8a9a0183a7ad2e386120de6f4ef92ce3a61f86ebbe483fd109461"
         },
         {
@@ -1828,7 +1830,13 @@
       "occurred_at": "2026-09-08T16:40:09.607Z",
       "actor": "Astra",
       "summary": "FD 계획의 기술·스키마 선택 시점을 정정하고 7개 기술 결정 작업과 실증 게이트를 연결했다. 재검토 대기."
+    },
+    {
+      "sequence": 117,
+      "occurred_at": "2026-09-08T16:42:12.198Z",
+      "actor": "Astra",
+      "summary": "AP-FD-PLAN-001 · functional-design plan DDT 검토 통과 및 Astra 위임 승인"
     }
   ],
-  "version": "a5ce27432b355a3c09a615259acecb74d38c1e6dc5a9d025458eec90f3705ce3"
+  "version": "d10fce764adea252133668427d15597a77a847dc768c72f6f2ff8c495f1d12cc"
 }
