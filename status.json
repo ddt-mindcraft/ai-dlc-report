@@ -1,27 +1,24 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T15:50:25.725Z",
-  "last_sequence": 106,
+  "updated_at": "2026-09-08T15:51:45.352Z",
+  "last_sequence": 107,
   "state": {
     "stage": "INCEPTION · Complete",
     "status": "phase_completed",
-    "summary": "Inception 전체 문서 검토와 위임 승인을 완료했다. 최종 바이트와 완료 승인을 연결했고 Construction 이전에서 정지했다.",
+    "summary": "Inception 완료. 요구·스토리·설계·작업 단위 검토와 위임 승인을 마치고 Construction 이전에서 정지했습니다.",
     "completed": [
-      "프로젝트 폴더와 제품 개발 루트 분리",
-      "DDT 실제 응답 확인",
-      "Windows 읽기 전용 로컬 공유 생성",
-      "하네스 설계·정책·결정/인계/변경 템플릿 작성",
-      "AI-DLC 사이클 및 판단·근거 타임라인 구성",
-      "AI-DLC 설치 관찰 및 참고 규칙 14개 대조",
-      "초기 입력 준비 계획 수립 · 제출·평가 정보 반영",
-      "심사·투표·제출 종합 실행 계획 수립 및 하네스 정책 연결"
+      "Workspace Detection",
+      "Requirements Analysis",
+      "User Stories",
+      "Workflow Planning",
+      "Application Design",
+      "Units Generation",
+      "Inception 최종 문서 검토 및 위임 승인"
     ],
-    "in_progress": [
-      "Application Design 수정 마무리·DDT 재검토"
-    ],
+    "in_progress": [],
     "blockers": [],
     "next_actions": [
-      "Inception 완료. 팀 검토 리포트를 게시하고 Construction 이전 정지 상태를 유지한다."
+      "팀은 Inception 산출물 검토 패널의 실제 문서 버전을 검토할 수 있습니다. Construction은 후속 지시 전 시작하지 않습니다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -56,7 +53,8 @@
       "AP-APP-PLAN-002 · application-design plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-APP-001 · application-design artifact DDT 검토 통과 및 Astra 위임 승인",
       "AP-UNITS-PLAN-001 · units-generation plan DDT 검토 통과 및 Astra 위임 승인",
-      "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인"
+      "AP-UNITS-001 · units-generation artifact DDT 검토 통과 및 Astra 위임 승인",
+      "AP-INCEPTION-001 · Inception 완료 승인"
     ],
     "phase_status": {
       "Inception": "완료",
@@ -67,7 +65,7 @@
       "stage": "INCEPTION · Complete",
       "status": "phase_completed",
       "phase": "Inception",
-      "observed_at": "2026-09-08T15:50:25.733Z",
+      "observed_at": "2026-09-08T15:51:45.363Z",
       "waiting_on": "다음 단계 인계 확인",
       "total": 0,
       "history_total": 38,
@@ -420,6 +418,119 @@
       ]
     },
     "developer_decisions": [],
+    "public_inception_review": {
+      "id": "INCEPTION-REVIEW-001",
+      "source_commit": "33767d4e71c8d139433ffb57f8f799064fbe121b",
+      "summary": "Inception의 요구사항·스토리·실행 계획·애플리케이션 설계·작업 단위 문서 검토를 마쳤습니다. Construction과 제품 구현은 시작하지 않았습니다.",
+      "decisions": [
+        "비개발자와 AI 에이전트 지식이 적은 사용자를 위한 Windows CLI/TUI 제품. Pi 기반, Worker(저비용)/Planner(고성능), 단일 EXE를 목표로 합니다.",
+        "Airouter는 테스트·데모용이며 실제 사용자는 셋업 과정에서 자신의 프로바이더·모델·인증을 설정합니다.",
+        "제품 전체는 하나의 작업 단위이고 14개 컴포넌트를 7개 논리 모듈 그룹으로 구성합니다. 내부 격리 자식 프로세스도 같은 제품에 속합니다.",
+        "권한은 작업마다 새로 확인합니다. 재개는 같은 Episode의 새 Run으로 기록하며 결과 불확실 동작을 자동 반복하지 않습니다.",
+        "검색은 기본 60초의 변경 가능한 타임아웃만 둡니다. 100/100/20GiB는 용량 검증 목표이며 저장 한도가 아닙니다.",
+        "별도 NFR 단계는 생략하되 확정 NFR·기능 수용 기준·PBT·검증 게이트는 후속 설계와 검증으로 전달합니다.",
+        "동일 단계에서 문제 검출이 2회 반복되면 Astra가 작성·검토·조율 과정까지 직접 재검토하는 방침을 적용했습니다. 이는 리뷰용 운영 설명이며 제품 사양에는 포함하지 않습니다."
+      ],
+      "not_executed": [
+        "제품 코드 작성·빌드·단일 EXE 패키징·Windows 실행",
+        "실제 프로바이더/모델 연결·Pi 통합 실행",
+        "보호 저장·폴더 권한·격리 자식·토큰 중복 실행 방지 실증",
+        "DB/본문 파일 중단 복구·모드 격리·PBT·100/100/20GiB 용량 검증"
+      ],
+      "artifacts": [
+        {
+          "title": "제품 요구사항 r1.1",
+          "path": "mindcraft/aidlc-docs/inception/requirements/requirements.md",
+          "sha256": "e28dc2380f8190af8b14919ebc9735e994402eb3738a608c9cd08eff31002c73",
+          "review_id": "DDT-REQ-REVIEW-002",
+          "approval_id": "AP-REQ-001"
+        },
+        {
+          "title": "사용자 스토리 17개와 수용 기준",
+          "path": "mindcraft/aidlc-docs/inception/user-stories/stories.md",
+          "sha256": "e9ff75715db783c1fcefa7944a4efc0b4db947ecab27c0e1a9bdabd7e767a14e",
+          "review_id": "DDT-STORY-SCOPE-001 · 범위 한정 검토",
+          "approval_id": "AP-STORIES-002"
+        },
+        {
+          "title": "대상 사용자 페르소나",
+          "path": "mindcraft/aidlc-docs/inception/user-stories/personas.md",
+          "sha256": "4db6cf21dc6b5ff0c344518d206bedef622115c4ffb9e2b246d8b930d6e967ce",
+          "review_id": "DDT-STORIES-002",
+          "approval_id": "AP-STORIES-001 · 페르소나 유지"
+        },
+        {
+          "title": "AI-DLC 실행 계획과 NFR 인계",
+          "path": "mindcraft/aidlc-docs/inception/plans/execution-plan.md",
+          "sha256": "089e5649ec75037f3b473844ac8ce1c595f351c28d3b88c917010e15e57292cc",
+          "review_id": "DDT-PLAN-STATUS-001",
+          "approval_id": "AP-WORKFLOW-003"
+        },
+        {
+          "title": "공통 계약과 상태·권한 경계",
+          "path": "mindcraft/aidlc-docs/inception/application-design/common-contracts.md",
+          "sha256": "57afa12994759b987022b21b3f3590f56547822c609494e813a3725fe3a316b5",
+          "review_id": "DDT-APP-ARTIFACT-003",
+          "approval_id": "AP-APP-001"
+        },
+        {
+          "title": "제품 컴포넌트와 책임",
+          "path": "mindcraft/aidlc-docs/inception/application-design/components.md",
+          "sha256": "10eea16e11c0a5f84aad64a644039a40b93b46ba0a78fb0212696779b73160a0",
+          "review_id": "DDT-APP-ARTIFACT-003",
+          "approval_id": "AP-APP-001"
+        },
+        {
+          "title": "컴포넌트 입출력 계약",
+          "path": "mindcraft/aidlc-docs/inception/application-design/component-methods.md",
+          "sha256": "5c81d01b04f3c9e3d864f9295fbd26860a5918078f994fce2517897410e64a9a",
+          "review_id": "DDT-APP-ARTIFACT-003",
+          "approval_id": "AP-APP-001"
+        },
+        {
+          "title": "내부 실행 흐름",
+          "path": "mindcraft/aidlc-docs/inception/application-design/services.md",
+          "sha256": "6e22b961de69c1339beec601d6b6d202db8a27c083697a4012bc0801ca669ddd",
+          "review_id": "DDT-APP-ARTIFACT-003",
+          "approval_id": "AP-APP-001"
+        },
+        {
+          "title": "컴포넌트 의존 관계",
+          "path": "mindcraft/aidlc-docs/inception/application-design/component-dependency.md",
+          "sha256": "760ae25e5286af0aa371debe22ae210fa0962ca94b9953f297ff40e825d1546c",
+          "review_id": "DDT-APP-ARTIFACT-003",
+          "approval_id": "AP-APP-001"
+        },
+        {
+          "title": "애플리케이션 설계 종합",
+          "path": "mindcraft/aidlc-docs/inception/application-design/application-design.md",
+          "sha256": "252113c7d941f1243fdf43b6c583c49193f4bb6fe1d69c165ead5972ccc2d93c",
+          "review_id": "DDT-APP-ARTIFACT-003",
+          "approval_id": "AP-APP-001"
+        },
+        {
+          "title": "작업 단위와 논리 모듈",
+          "path": "mindcraft/aidlc-docs/inception/application-design/unit-of-work.md",
+          "sha256": "32a99fea0a145bd9445f8a8e6d0be44b77d654b9d8516de57c83dcc5b1a018ec",
+          "review_id": "DDT-INCEPTION-FINAL-005",
+          "approval_id": "AP-UNITS-001"
+        },
+        {
+          "title": "작업 단위 의존 관계",
+          "path": "mindcraft/aidlc-docs/inception/application-design/unit-of-work-dependency.md",
+          "sha256": "945e079aeb74d6723bffd9218311cb05b7dc6c4b442339d3df4e795c9431ed42",
+          "review_id": "DDT-INCEPTION-FINAL-005",
+          "approval_id": "AP-UNITS-001"
+        },
+        {
+          "title": "17개 스토리 작업 단위 매핑",
+          "path": "mindcraft/aidlc-docs/inception/application-design/unit-of-work-story-map.md",
+          "sha256": "fac3a899ed3bbd0997c7c55a4ca01333d4b6637f1cfcb28aa58df439f6ea405b",
+          "review_id": "DDT-INCEPTION-FINAL-005",
+          "approval_id": "AP-UNITS-001"
+        }
+      ]
+    },
     "public_review_document": {
       "id": "MC-INPUT-REVIEW-001",
       "revision": "6",
@@ -1583,7 +1694,13 @@
       "occurred_at": "2026-09-08T15:50:25.725Z",
       "actor": "Astra",
       "summary": "Inception 전체 문서 검토와 위임 승인을 완료했다. 최종 바이트와 완료 승인을 연결했고 Construction 이전에서 정지했다."
+    },
+    {
+      "sequence": 107,
+      "occurred_at": "2026-09-08T15:51:45.352Z",
+      "actor": "Astra",
+      "summary": "Inception 전체 문서 검토·위임 승인을 완료했다. 실제 산출물 검토 링크를 공개했으며 Construction 이전에서 정지했다."
     }
   ],
-  "version": "5efd527eff5884ba6c607fc09f8ac7846b86ad9a123c7ad0f1aa3949f0d75ec5"
+  "version": "33785e4605addb3ef7de486649f607e4e58192e2605e57c8ac00b34ad4cd7148"
 }
