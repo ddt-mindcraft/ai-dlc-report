@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T10:43:11.080Z",
-  "last_sequence": 58,
+  "updated_at": "2026-09-08T10:48:00.188Z",
+  "last_sequence": 59,
   "state": {
     "stage": "INCEPTION · Application Design",
     "status": "waiting_answers",
-    "summary": "답변 대기 · 질문 11개 · 미답변 10개",
+    "summary": "설계 계획과 DDT 조언 보존 · 권한·영속·Pi·모드 경계 선택",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "담당자가 미답변 질문을 확인하고 답변을 준비"
+      "Claude가 설계 질문10개 답변·경계·실패조건·검증게이트 반영 후 계획 재검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -51,7 +51,7 @@
       "stage": "INCEPTION · Application Design",
       "status": "waiting_answers",
       "phase": "Inception",
-      "observed_at": "2026-09-08T10:43:11.087Z",
+      "observed_at": "2026-09-08T10:48:00.193Z",
       "waiting_on": "Astra",
       "total": 11,
       "history_total": 21,
@@ -1225,7 +1225,13 @@
       "occurred_at": "2026-09-08T10:43:11.080Z",
       "actor": "Astra",
       "summary": "AI-DLC 원본 변경 관찰 · INCEPTION · Application Design"
+    },
+    {
+      "sequence": 59,
+      "occurred_at": "2026-09-08T10:48:00.188Z",
+      "actor": "Astra",
+      "summary": "설계 계획과 DDT 조언 보존 · 권한·영속·Pi·모드 경계 선택"
     }
   ],
-  "version": "f5be224e9ad76a5a3d05c8d43e3f93b6855df6b352eb1d3d86c98a406d7926ac"
+  "version": "6a0038da1a31671a3983c4e6b66a42aae04d08a2c05100a0e2a56f4fa2db5389"
 }
