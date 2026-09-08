@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T17:13:51.317Z",
-  "last_sequence": 122,
+  "updated_at": "2026-09-08T17:15:21.666Z",
+  "last_sequence": 123,
   "state": {
     "stage": "CONSTRUCTION · Functional Design",
     "status": "waiting_review",
-    "summary": "DDT가 집중 리뷰 7개 지적을 독립 대조해 수정 요청으로 확인했다. 저장·승인·상태·격리·셋업 수정 후 반례와 원본 계약을 재검증한다.",
+    "summary": "집중 리뷰 후 Workspace 저장·새 승인 구분·명령 staging과 broker 경계·기술 근거 정정의 구현 결정을 기록했다. 제품 범위는 유지한다.",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "집중 리뷰 F-FD-A01~A07의 근거·결정·종료 기준으로 Claude의 국소 수정을 실행한다."
+      "확정한 국소 수정 결정으로 Claude가 FD 산출물을 정정하고 결과를 DDT에 다시 전달한다."
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -69,7 +69,7 @@
       "stage": "CONSTRUCTION · Functional Design",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-08T17:13:51.341Z",
+      "observed_at": "2026-09-08T17:15:21.696Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -1866,7 +1866,13 @@
       "occurred_at": "2026-09-08T17:13:51.317Z",
       "actor": "Astra",
       "summary": "DDT가 집중 리뷰 7개 지적을 독립 대조해 수정 요청으로 확인했다. 저장·승인·상태·격리·셋업 수정 후 반례와 원본 계약을 재검증한다."
+    },
+    {
+      "sequence": 123,
+      "occurred_at": "2026-09-08T17:15:21.666Z",
+      "actor": "Astra",
+      "summary": "집중 리뷰 후 Workspace 저장·새 승인 구분·명령 staging과 broker 경계·기술 근거 정정의 구현 결정을 기록했다. 제품 범위는 유지한다."
     }
   ],
-  "version": "d33ac40b856dd6127b0251a0c2a2975125365479e5c0c0282b6e6bc0eb690b56"
+  "version": "e952db1f835373adbd53a7d2fbc40355788bac37729c368933e8774fc4114d62"
 }
