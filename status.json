@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-08T13:52:51.973Z",
-  "last_sequence": 81,
+  "updated_at": "2026-09-08T13:54:02.324Z",
+  "last_sequence": 82,
   "state": {
     "stage": "INCEPTION · **Workflow Planning",
     "status": "waiting_review",
-    "summary": "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
+    "summary": "AP-APP-PLAN-002 · application-design plan DDT 검토 통과 및 Astra 위임 승인",
     "completed": [
       "프로젝트 폴더와 제품 개발 루트 분리",
       "DDT 실제 응답 확인",
@@ -21,7 +21,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "설계 계획 상태 정리본 별도 승인 후 집중 리뷰에 따른 수정으로 복귀"
+      "새 Claude 세션에서 상태 해시 오타를 먼저 정정하고 집중 리뷰 AF01~05 및 INV09 설계 반영, 검토 대기에서 정지"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -38,6 +38,7 @@
       "DDT-APP-PLAN-REVIEW-002 · approve",
       "DDT-APP-PLAN-REVIEW-002 · approve",
       "DDT-STORY-SCOPE-001 · stories 승인 권고 / 실행계획 상태 수정 요청",
+      "DDT-PLAN-STATUS-001 · approve",
       "DDT-PLAN-STATUS-001 · approve"
     ],
     "approvals": [
@@ -48,7 +49,8 @@
       "AP-WORKFLOW-002 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-APP-PLAN-001 · application-design plan DDT 검토 통과 및 Astra 위임 승인",
       "AP-STORIES-002 · INV09 정정 stories 범위만 승인",
-      "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인"
+      "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인",
+      "AP-APP-PLAN-002 · application-design plan DDT 검토 통과 및 Astra 위임 승인"
     ],
     "phase_status": {
       "Inception": "진행 중",
@@ -59,11 +61,11 @@
       "stage": "INCEPTION · **Workflow Planning",
       "status": "waiting_review",
       "phase": "Inception",
-      "observed_at": "2026-09-08T13:52:51.984Z",
+      "observed_at": "2026-09-08T13:54:02.334Z",
       "waiting_on": "Astra · 검토",
       "total": 11,
       "history_total": 21,
-      "unresolved": 1,
+      "unresolved": 0,
       "unanswered": 0,
       "warnings": [],
       "questions": [
@@ -154,7 +156,7 @@
           "active": true,
           "title": "Task/Episode/Run/Session/Knowledge의 식별·상태 모델링 방식은? (sameEpisode/newRun·결과 불확실 효과 포함 — 상태 종류·정책은 확정, 모델링 방식만 선택)",
           "owner": "Astra",
-          "status": "answered",
+          "status": "resolved",
           "version": "81d9f216324321b7cb97ecab7b6c9b15d3b305b28d98d559119c2ff599baec51"
         },
         {
@@ -1371,7 +1373,13 @@
       "occurred_at": "2026-09-08T13:52:51.973Z",
       "actor": "Astra",
       "summary": "AP-WORKFLOW-003 · workflow-planning plan DDT 검토 통과 및 Astra 위임 승인"
+    },
+    {
+      "sequence": 82,
+      "occurred_at": "2026-09-08T13:54:02.324Z",
+      "actor": "Astra",
+      "summary": "AP-APP-PLAN-002 · application-design plan DDT 검토 통과 및 Astra 위임 승인"
     }
   ],
-  "version": "79433e09e7d736800874b391299d9dcd7ad72ca88d7c139f1e1eb90efdfdb3fb"
+  "version": "b73d0d7450771dfd163b4e4a1ec55ac702c37cd5e6af940af8367ae59ef7040e"
 }
