@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T02:15:31.991Z",
-  "last_sequence": 209,
+  "updated_at": "2026-09-09T02:18:09.412Z",
+  "last_sequence": 210,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "B 원자적 Run·binding 생성과 타입 오류 수정 수신, 실제 파일 DB 테스트 및 DDT 재검토 준비",
+    "summary": "B 실제 파일 DB 25/25·PBT3/3 통과. H 도구 인자·반환 ID 상관 추가 결함 집중 리뷰",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "B 실제검증·DDT, C/H/G/E/F/I 실행 통합 및 단일 EXE"
+      "H 도구 의미·반환상관 보완, 실제TUI·파일/모델 실행과 EXE 통합"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T02:15:32.032Z",
+      "observed_at": "2026-09-09T02:18:10.243Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2392,7 +2392,13 @@
       "occurred_at": "2026-09-09T02:15:31.991Z",
       "actor": "Astra",
       "summary": "B 원자적 Run·binding 생성과 타입 오류 수정 수신, 실제 파일 DB 테스트 및 DDT 재검토 준비"
+    },
+    {
+      "sequence": 210,
+      "occurred_at": "2026-09-09T02:18:09.412Z",
+      "actor": "Astra",
+      "summary": "B 실제 파일 DB 25/25·PBT3/3 통과. H 도구 인자·반환 ID 상관 추가 결함 집중 리뷰"
     }
   ],
-  "version": "f235264365f8010cc3254b0ee6adf664c96269fa800c119d5d99ed9f35e8d20a"
+  "version": "fbad96195b2514b635b9e840a67718d3a9d460ab91df9634863a7d766c2be088"
 }
