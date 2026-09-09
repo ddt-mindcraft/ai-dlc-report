@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T03:43:59.489Z",
-  "last_sequence": 242,
+  "updated_at": "2026-09-09T03:48:20.584Z",
+  "last_sequence": 243,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "F 실제 전체 facade 모델 응답·H 연계 회귀 통과; LPAC 실제 토큰 대조 근거로 수정 확정",
+    "summary": "I 실제 모델 설정·자격 증명 연결 조립 통합; 실제 컴파일·실행 검증 대기",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "C007 실제 LPAC 수정, B007 저장소 보완, I005 설정 조립 후 한글 경로 TUI 검증"
+      "native 재빌드 및 실제 테스트, H DDT 지적 직접 대조, EXE 시작 실패 진단"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T03:43:59.541Z",
+      "observed_at": "2026-09-09T03:48:20.692Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2590,7 +2590,13 @@
       "occurred_at": "2026-09-09T03:43:59.489Z",
       "actor": "Astra",
       "summary": "F 실제 전체 facade 모델 응답·H 연계 회귀 통과; LPAC 실제 토큰 대조 근거로 수정 확정"
+    },
+    {
+      "sequence": 243,
+      "occurred_at": "2026-09-09T03:48:20.584Z",
+      "actor": "Astra",
+      "summary": "I 실제 모델 설정·자격 증명 연결 조립 통합; 실제 컴파일·실행 검증 대기"
     }
   ],
-  "version": "6ff1116048b47fb7d68ac181187bc6f9145d69c749f9b002757763d7437872d2"
+  "version": "493491f8216968729ea7cc6bee9ff4a0ca8f180c1c00e956a68f939f9a2837e4"
 }
