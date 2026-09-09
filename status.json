@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T02:26:14.537Z",
-  "last_sequence": 213,
+  "updated_at": "2026-09-09T02:29:04.859Z",
+  "last_sequence": 214,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "B 추가 권위·원본 전송의도·저널 무결성 결함 집중 리뷰. E 작성 실패 부분 결과 보존 후 새 세션 복구",
+    "summary": "G 복구·D 실행권 훅 및 읽기 본문 보존 수정 수신. 격리 실패는 검증환경 오탐 정정, D 테스트 타입 보완",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "B 보안·정합 보완, E 부분작성 복구, 전체실행통합 우선"
+      "D 테스트 보완·G 실제검증, F/I 결과통합, C/B/E 실행경로 완성"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T02:26:14.595Z",
+      "observed_at": "2026-09-09T02:29:04.944Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2416,7 +2416,13 @@
       "occurred_at": "2026-09-09T02:26:14.537Z",
       "actor": "Astra",
       "summary": "B 추가 권위·원본 전송의도·저널 무결성 결함 집중 리뷰. E 작성 실패 부분 결과 보존 후 새 세션 복구"
+    },
+    {
+      "sequence": 214,
+      "occurred_at": "2026-09-09T02:29:04.859Z",
+      "actor": "Astra",
+      "summary": "G 복구·D 실행권 훅 및 읽기 본문 보존 수정 수신. 격리 실패는 검증환경 오탐 정정, D 테스트 타입 보완"
     }
   ],
-  "version": "82c9cbe3254cee691fe03b3eb8b3d863e8fce9acb89f42b3db59cff87fe6722c"
+  "version": "785f6db58cf4bd1287c821ac7691207b8dfde17e6c2456b93691a0d6381be9bc"
 }
