@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T04:09:05.092Z",
-  "last_sequence": 251,
+  "updated_at": "2026-09-09T04:10:35.448Z",
+  "last_sequence": 252,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "DDT 이전 E/F 지적 해소 확인, 자료 참조 일치 검증 누락 직접 대조·수정 확정",
+    "summary": "실제 설정·DPAPI·거절/승인 단회 연결 검증 통과, 로컬 연결 보안 표시 정정 필요 확인",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "F 자료 ref/hash/길이 전체 대조 회귀 보완, I 전체 TUI 연결과 실제 설정 검증"
+      "F 참조 정체성 보완, I007 실제 흐름 조립 후 로컬 연결 표시 정정, C 생성 실패 추적"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T04:09:05.123Z",
+      "observed_at": "2026-09-09T04:10:35.475Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2644,7 +2644,13 @@
       "occurred_at": "2026-09-09T04:09:05.092Z",
       "actor": "Astra",
       "summary": "DDT 이전 E/F 지적 해소 확인, 자료 참조 일치 검증 누락 직접 대조·수정 확정"
+    },
+    {
+      "sequence": 252,
+      "occurred_at": "2026-09-09T04:10:35.448Z",
+      "actor": "Astra",
+      "summary": "실제 설정·DPAPI·거절/승인 단회 연결 검증 통과, 로컬 연결 보안 표시 정정 필요 확인"
     }
   ],
-  "version": "a7c264541df80f98fee8a888a94ac62c2eecf1d30557e4446c4269af31cc272e"
+  "version": "e49d61e8016d1621fa01a8b4f8ab7c64987ec568037970e02c651f0c26dc0f37"
 }
