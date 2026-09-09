@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T04:04:52.501Z",
-  "last_sequence": 249,
+  "updated_at": "2026-09-09T04:07:08.134Z",
+  "last_sequence": 250,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "B 기존 작업 접근 복원·조회 필드 수정 통합, E43·F48 테스트 및 실패 복원 후 실제 모델 응답 확인",
+    "summary": "B 실제 SQLite48·속성3, I 단위20·기능31 테스트 통과; 전체 TUI 작업 흐름 조립 시작",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "B·I 전체 컴파일과 실제 테스트, I007 작업·재개·Knowledge 통합; E/F 재검토"
+      "I007 실제 작업·재개·Knowledge 연결, DDT E/F 재검토, C 명령 하위프로세스 원인 추적"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T04:04:52.522Z",
+      "observed_at": "2026-09-09T04:07:08.161Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2632,7 +2632,13 @@
       "occurred_at": "2026-09-09T04:04:52.501Z",
       "actor": "Astra",
       "summary": "B 기존 작업 접근 복원·조회 필드 수정 통합, E43·F48 테스트 및 실패 복원 후 실제 모델 응답 확인"
+    },
+    {
+      "sequence": 250,
+      "occurred_at": "2026-09-09T04:07:08.134Z",
+      "actor": "Astra",
+      "summary": "B 실제 SQLite48·속성3, I 단위20·기능31 테스트 통과; 전체 TUI 작업 흐름 조립 시작"
     }
   ],
-  "version": "b5cb282acafad0c8ee2c4108db213fc4ec38e50cbc9d2f7bd3247ae8caa1d350"
+  "version": "c0a1b27bf963a50e70209528ed036b146b25db579f84f712b392e7dc97cb484c"
 }
