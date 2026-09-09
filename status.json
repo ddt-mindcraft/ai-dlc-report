@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T03:09:47.873Z",
-  "last_sequence": 228,
+  "updated_at": "2026-09-09T03:10:58.856Z",
+  "last_sequence": 229,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "B 실제 저장·승인 생산자 통합, F 테스트28통과·12미실행 및 핵심 사전준비 API 누락 집중 확인",
+    "summary": "B004 본문 로드의 엄격 타입 오류3건 확인, 단일 파일 보완 후 실제 DB 검증 진행",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "F 실제 2단계 모델 실행 구현, B 실DB 검증, I 서비스 조립·C/J 개선"
+      "B 배열 안전 추출 수정, F 실제 사전준비 API 구현 및 통합 검증"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T03:09:47.948Z",
+      "observed_at": "2026-09-09T03:10:58.899Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2506,7 +2506,13 @@
       "occurred_at": "2026-09-09T03:09:47.873Z",
       "actor": "Astra",
       "summary": "B 실제 저장·승인 생산자 통합, F 테스트28통과·12미실행 및 핵심 사전준비 API 누락 집중 확인"
+    },
+    {
+      "sequence": 229,
+      "occurred_at": "2026-09-09T03:10:58.856Z",
+      "actor": "Astra",
+      "summary": "B004 본문 로드의 엄격 타입 오류3건 확인, 단일 파일 보완 후 실제 DB 검증 진행"
     }
   ],
-  "version": "a6a4b579b44b82bec663a7a46fb499e07c9157c4212c70b8bdf0e15619d560e4"
+  "version": "a5197e2c376088b4272d4e4811dec41ea535cd2a65baab39e0437c8d14bb305e"
 }
