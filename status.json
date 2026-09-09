@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T03:48:20.584Z",
-  "last_sequence": 243,
+  "updated_at": "2026-09-09T03:51:21.724Z",
+  "last_sequence": 244,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "I 실제 모델 설정·자격 증명 연결 조립 통합; 실제 컴파일·실행 검증 대기",
+    "summary": "DDT E/F 실제 경계 지적·I 컴파일 오류·재개 scope 누락 직접 대조, 제한된 수정 범위 확정",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "native 재빌드 및 실제 테스트, H DDT 지적 직접 대조, EXE 시작 실패 진단"
+      "I 타입·한글 경로 수정, E/F 준비 실패 회귀 보완, B 기존 Run 접근 복원과 C 실제 보안 검증"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T03:48:20.692Z",
+      "observed_at": "2026-09-09T03:51:21.754Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2596,7 +2596,13 @@
       "occurred_at": "2026-09-09T03:48:20.584Z",
       "actor": "Astra",
       "summary": "I 실제 모델 설정·자격 증명 연결 조립 통합; 실제 컴파일·실행 검증 대기"
+    },
+    {
+      "sequence": 244,
+      "occurred_at": "2026-09-09T03:51:21.724Z",
+      "actor": "Astra",
+      "summary": "DDT E/F 실제 경계 지적·I 컴파일 오류·재개 scope 누락 직접 대조, 제한된 수정 범위 확정"
     }
   ],
-  "version": "493491f8216968729ea7cc6bee9ff4a0ca8f180c1c00e956a68f939f9a2837e4"
+  "version": "3facac2810b678b9768a02ef92120c794a33cf1c9caf2b9adac0578e2d9dc5ac"
 }
