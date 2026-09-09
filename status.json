@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T03:15:58.982Z",
-  "last_sequence": 232,
+  "updated_at": "2026-09-09T03:17:48.590Z",
+  "last_sequence": 233,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "H 확정 입력·재시도·실패 결과 수정 통합, B 속성 테스트의 발급자 구성 오류 집중 확인",
+    "summary": "I 실제 저장소 연결 통합·모델 실행 조립 미완료, C 오류 원인 실증·H 타입 보완 범위 확정",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "H 실제 테스트·DDT 재검토, B 테스트만 교정, C 오류87/203 원인 실증"
+      "C 확인된 API 수정·H 컴파일 보완, I 모델 설정 연결과 실행 조립 순차 완성"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T03:15:59.049Z",
+      "observed_at": "2026-09-09T03:17:48.667Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2530,7 +2530,13 @@
       "occurred_at": "2026-09-09T03:15:58.982Z",
       "actor": "Astra",
       "summary": "H 확정 입력·재시도·실패 결과 수정 통합, B 속성 테스트의 발급자 구성 오류 집중 확인"
+    },
+    {
+      "sequence": 233,
+      "occurred_at": "2026-09-09T03:17:48.590Z",
+      "actor": "Astra",
+      "summary": "I 실제 저장소 연결 통합·모델 실행 조립 미완료, C 오류 원인 실증·H 타입 보완 범위 확정"
     }
   ],
-  "version": "cc457b1c98f90eb67c35c43ba2ddea8565733bf9f021d7030b8a906b3560d64d"
+  "version": "d10f1943832d81dc2e53b3c0315d2708f1a08619438be3edc54d9beb62eae13f"
 }
