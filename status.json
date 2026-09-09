@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T04:02:10.456Z",
-  "last_sequence": 248,
+  "updated_at": "2026-09-09T04:04:52.501Z",
+  "last_sequence": 249,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "E 실제 SDK systemPrompt 검증·F 준비 실패 복원과 중복 방지 수정 통합",
+    "summary": "B 기존 작업 접근 복원·조회 필드 수정 통합, E43·F48 테스트 및 실패 복원 후 실제 모델 응답 확인",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "native 재빌드 및 실제 테스트, H DDT 지적 직접 대조, EXE 시작 실패 진단"
+      "B·I 전체 컴파일과 실제 테스트, I007 작업·재개·Knowledge 통합; E/F 재검토"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T04:02:10.481Z",
+      "observed_at": "2026-09-09T04:04:52.522Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2626,7 +2626,13 @@
       "occurred_at": "2026-09-09T04:02:10.456Z",
       "actor": "Astra",
       "summary": "E 실제 SDK systemPrompt 검증·F 준비 실패 복원과 중복 방지 수정 통합"
+    },
+    {
+      "sequence": 249,
+      "occurred_at": "2026-09-09T04:04:52.501Z",
+      "actor": "Astra",
+      "summary": "B 기존 작업 접근 복원·조회 필드 수정 통합, E43·F48 테스트 및 실패 복원 후 실제 모델 응답 확인"
     }
   ],
-  "version": "3c61c352ddbf551aa0ead0263f3a682754f8c4415b762e61d7198c539862e85d"
+  "version": "b5cb282acafad0c8ee2c4108db213fc4ec38e50cbc9d2f7bd3247ae8caa1d350"
 }
