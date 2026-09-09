@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T02:40:28.828Z",
-  "last_sequence": 218,
+  "updated_at": "2026-09-09T02:42:08.060Z",
+  "last_sequence": 219,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "I 실제셸 초안·E 실패소스와 후속테스트를 명시적미완료로 결합. 실제 Pi→모델 응답 성공과 남은 통합 결함 구분",
+    "summary": "Pi 실제 Context 준비·승인 후 실행 계약 확정, E 프로토콜 문자열 오판 집중 리뷰",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "F 정확Context·도구결과·timeout 수정, I 실제서비스 조립, B/C 연동·EXE 검증"
+      "E/F 정확Context 계약 수정과 실제 모델 호출, I TUI 서비스 조립"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T02:40:28.904Z",
+      "observed_at": "2026-09-09T02:42:08.103Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2446,7 +2446,13 @@
       "occurred_at": "2026-09-09T02:40:28.828Z",
       "actor": "Astra",
       "summary": "I 실제셸 초안·E 실패소스와 후속테스트를 명시적미완료로 결합. 실제 Pi→모델 응답 성공과 남은 통합 결함 구분"
+    },
+    {
+      "sequence": 219,
+      "occurred_at": "2026-09-09T02:42:08.060Z",
+      "actor": "Astra",
+      "summary": "Pi 실제 Context 준비·승인 후 실행 계약 확정, E 프로토콜 문자열 오판 집중 리뷰"
     }
   ],
-  "version": "f1da02847fbbcedd7de2a3279160f512d83005e531cc93c1d2e109d7e4ddc783"
+  "version": "8b9cdf90ca6b54f53a09ebdea5414818c3a8fa988d68d1c179019329231003a5"
 }
