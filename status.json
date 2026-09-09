@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T04:19:13.670Z",
-  "last_sequence": 254,
+  "updated_at": "2026-09-09T04:20:26.472Z",
+  "last_sequence": 255,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "F 참조 일치 수정 통합·G 독립 검토 통과, 최초 셋업 요구 유지와 복수 고지 수집 보완 확정",
+    "summary": "I 작업·재개·Knowledge 연결 작성본 통합, 실제 컴파일·실행으로 완성 범위 검증",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "F010 실제 회귀, I007 연결 후 최초 셋업·로컬 표시 보완, B009 검증 및 C 후처리 추적"
+      "native 재빌드 및 실제 테스트, H DDT 지적 직접 대조, EXE 시작 실패 진단"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T04:19:13.695Z",
+      "observed_at": "2026-09-09T04:20:26.500Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2662,7 +2662,13 @@
       "occurred_at": "2026-09-09T04:19:13.670Z",
       "actor": "Astra",
       "summary": "F 참조 일치 수정 통합·G 독립 검토 통과, 최초 셋업 요구 유지와 복수 고지 수집 보완 확정"
+    },
+    {
+      "sequence": 255,
+      "occurred_at": "2026-09-09T04:20:26.472Z",
+      "actor": "Astra",
+      "summary": "I 작업·재개·Knowledge 연결 작성본 통합, 실제 컴파일·실행으로 완성 범위 검증"
     }
   ],
-  "version": "b35703d731a961254d61d6000b68b0c08f8b51c07812b78ee51855973f06186d"
+  "version": "db44eb0c76b25770acb2c5698c9b1d03b58141cda2ea3ec2d8e88efb9a0134d1"
 }
