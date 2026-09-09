@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-09T03:17:48.590Z",
-  "last_sequence": 233,
+  "updated_at": "2026-09-09T03:21:58.833Z",
+  "last_sequence": 234,
   "state": {
     "stage": "CONSTRUCTION · Code Generation",
     "status": "waiting_review",
-    "summary": "I 실제 저장소 연결 통합·모델 실행 조립 미완료, C 오류 원인 실증·H 타입 보완 범위 확정",
+    "summary": "H 엄격 타입 보완 통합, EXE 도움말 최초74초·재실행48초 성공이나 TUI 시작 후 비정상 종료 확인",
     "completed": [
       "Workspace Detection",
       "Requirements Analysis",
@@ -20,7 +20,7 @@
     ],
     "blockers": [],
     "next_actions": [
-      "C 확인된 API 수정·H 컴파일 보완, I 모델 설정 연결과 실행 조립 순차 완성"
+      "H 실제 테스트·DDT 재검토, TUI 시작 비정상 종료 진단, I/F 실서비스 연결"
     ],
     "reviews": [
       "HARNESS-REVIEW-001 · 일반 하네스 보완",
@@ -73,7 +73,7 @@
       "stage": "CONSTRUCTION · Code Generation",
       "status": "waiting_review",
       "phase": "Construction",
-      "observed_at": "2026-09-09T03:17:48.667Z",
+      "observed_at": "2026-09-09T03:21:58.910Z",
       "waiting_on": "Astra · 검토",
       "total": 25,
       "history_total": 21,
@@ -2536,7 +2536,13 @@
       "occurred_at": "2026-09-09T03:17:48.590Z",
       "actor": "Astra",
       "summary": "I 실제 저장소 연결 통합·모델 실행 조립 미완료, C 오류 원인 실증·H 타입 보완 범위 확정"
+    },
+    {
+      "sequence": 234,
+      "occurred_at": "2026-09-09T03:21:58.833Z",
+      "actor": "Astra",
+      "summary": "H 엄격 타입 보완 통합, EXE 도움말 최초74초·재실행48초 성공이나 TUI 시작 후 비정상 종료 확인"
     }
   ],
-  "version": "d10f1943832d81dc2e53b3c0315d2708f1a08619438be3edc54d9beb62eae13f"
+  "version": "5ee1c5fb3b627bb8de86def0d0eaae895573e7e46c3d0777fc0dbd5c922a3a15"
 }
